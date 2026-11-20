@@ -3826,10 +3826,15 @@ html.fx-armed #introCurtain {
   .mq-track { animation: none; }
 }
 
-/* --- 05 band tint (Why Me section lift; also clips the ghost portrait) --- */
+/* --- 05 band tint (Why Me section lift; also clips the ghost portrait) ---
+   isolation: the portrait's z-index:-1 must paint ABOVE this section's
+   background but BELOW its content — that needs the section to establish
+   a stacking context (the hero had one via z-index:1; this one didn't,
+   so the portrait sank behind the opaque band background) */
 .band-teal-tint {
   position: relative;
   overflow: hidden;
+  isolation: isolate;
   background:
     radial-gradient(1100px 600px at 85% 20%, rgba(100, 255, 218, 0.07), transparent 65%),
     var(--primary-bg);
