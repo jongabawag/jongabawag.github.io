@@ -4090,6 +4090,7 @@ html.fx-armed #introCurtain {
 }
 
 .process-track.pin-enabled .process-gnum span {
+  grid-area: 1 / 1;
   opacity: 0;
   transition: opacity 0.45s ease;
 }
