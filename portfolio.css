@@ -676,16 +676,17 @@ li {
   z-index: 1;
 }
 
-/* Ghost portrait — oversized, faded teal-duotone backdrop behind the hero text.
-   Bold in scale, quiet in presence: dissolves into the flat canvas via a radial
-   mask. Parallaxed and faded in by GSAP when the FX layer is active; fully
-   static otherwise. Hidden on small screens for text legibility. */
+/* Ghost portrait — oversized, faded duotone backdrop. Lives behind the
+   "Why Work With Me" evidence section (moved from the hero in v2).
+   Dissolves into the band tint via a radial mask. Faded in and parallaxed
+   by GSAP when the FX layer is active; fully static otherwise. Hidden on
+   small screens for text legibility. */
 .ghost-portrait {
   position: absolute;
-  top: 4%;
+  top: 0;
   right: 0;
-  width: min(46vw, 620px);
-  height: min(88vh, 780px);
+  width: min(42vw, 580px);
+  height: min(72vh, 640px);
   background-image: url("./images/profile.jpg?v=2");
   background-size: cover;
   background-position: center top;
@@ -3548,8 +3549,8 @@ html.fx-armed #introCurtain {
    ========================================== */
 
 /* --- 01 giant hero statement (name → byline) --- */
-/* Statement escapes the 780px text column so it breaks in two lines like the mockup;
-   the supporting copy keeps its own reading widths */
+/* The hero is a 7/5 split: statement left, proof stack right (v2).
+   The supporting copy keeps its own reading widths. */
 .hero-content {
   max-width: none;
 }
@@ -3595,8 +3596,8 @@ html.fx-armed #introCurtain {
 }
 
 #landing .hero-statement {
-  font-size: clamp(2.7rem, 7.4vw, 6.1rem);
-  line-height: 1.04;
+  font-size: clamp(2.4rem, 4.8vw, 4rem);
+  line-height: 1.06;
   font-weight: 700;
   letter-spacing: -0.025em;
   max-width: none;
@@ -3619,25 +3620,10 @@ html.fx-armed #introCurtain {
   color: var(--accent-secondary);
 }
 
-/* --- 02 proof band: floating app windows --- */
-.proof-band {
-  position: relative;
-  padding: 7rem 0 8.5rem;
-  overflow: hidden;
-  background:
-    radial-gradient(900px 480px at 78% 12%, rgba(100, 255, 218, 0.06), transparent 65%),
-    var(--primary-bg);
-}
-
-.proof-band .section-kicker {
-  margin-bottom: 0;
-}
-
+/* --- 02 proof stack: floating app windows beside the hero --- */
 .proof-stack {
   position: relative;
-  max-width: 1100px;
-  margin: 3.2rem auto 0;
-  height: min(600px, 74vh);
+  height: min(560px, 70vh);
   perspective: 1200px;
 }
 
@@ -3675,9 +3661,9 @@ html.fx-armed #introCurtain {
   height: auto;
 }
 
-.pw1 { --rot: -3deg;  width: 64%; top: 0;    left: 0;    z-index: 3; }
-.pw2 { --rot: 2.5deg; width: 54%; top: 8%;   right: -2%; z-index: 2; }
-.pw3 { --rot: -1.5deg; width: 42%; bottom: -6%; right: 6%; z-index: 4; }
+.pw1 { --rot: -3deg;  width: 78%; top: 0;    left: 0;    z-index: 3; }
+.pw2 { --rot: 2.5deg; width: 62%; top: 8%;   right: -2%; z-index: 2; }
+.pw3 { --rot: -1.5deg; width: 56%; bottom: -6%; right: 6%; z-index: 4; }
 
 .chrome-status.live-note {
   color: var(--accent-secondary);
@@ -3695,9 +3681,7 @@ html.fx-armed #introCurtain {
 }
 
 .proof-hint {
-  max-width: 1100px;
-  margin: 1.6rem auto 0;
-  padding: 0 2rem;
+  margin: 1.1rem 0 0;
   font-family: var(--mono);
   font-size: 0.66rem;
   letter-spacing: 0.08em;
@@ -3842,8 +3826,10 @@ html.fx-armed #introCurtain {
   .mq-track { animation: none; }
 }
 
-/* --- 05 band tint (Why Me section lift) --- */
+/* --- 05 band tint (Why Me section lift; also clips the ghost portrait) --- */
 .band-teal-tint {
+  position: relative;
+  overflow: hidden;
   background:
     radial-gradient(1100px 600px at 85% 20%, rgba(100, 255, 218, 0.07), transparent 65%),
     var(--primary-bg);
@@ -4248,12 +4234,6 @@ html.fx-armed #introCurtain {
 }
 
 /* --- light theme variants (v2 layer) --- */
-[data-theme="light"] .proof-band {
-  background:
-    radial-gradient(900px 480px at 78% 12%, rgba(13, 148, 136, 0.07), transparent 65%),
-    var(--primary-bg);
-}
-
 [data-theme="light"] .proof-win {
   box-shadow: 0 24px 60px rgba(17, 24, 39, 0.18);
 }
@@ -4280,17 +4260,16 @@ html.fx-armed #introCurtain {
   box-shadow: inset 0 0 0 1px rgba(17, 24, 39, 0.2);
 }
 
-/* --- proof band responsive --- */
-@media (max-width: 900px) {
-  .proof-stack { height: 480px; }
-  .pw1 { width: 74%; }
-  .pw2 { width: 60%; top: 34%; }
-  .pw3 { width: 56%; bottom: -12%; right: 0; }
+/* --- proof stack responsive --- */
+@media (max-width: 991.98px) {
+  .proof-stack { height: 480px; margin-top: 1.5rem; }
+  .pw1 { width: 88%; }
+  .pw2 { width: 66%; top: 34%; }
+  .pw3 { width: 62%; bottom: -12%; right: 0; }
 }
 
 @media (max-width: 575.98px) {
-  .proof-band { padding: 5rem 0 6.5rem; }
-  .proof-stack { height: 400px; margin-top: 2.2rem; }
+  .proof-stack { height: 400px; }
   .pw1 { width: 92%; }
   .pw2 { width: 74%; top: 46%; right: -4%; }
   .pw3 { width: 66%; bottom: -10%; right: 2%; }
