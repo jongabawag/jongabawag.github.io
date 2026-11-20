@@ -669,7 +669,7 @@ li {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding: 6rem 2rem;
+  padding: 3rem 2rem 6rem;
   position: relative;
   z-index: 1;
 }
@@ -700,6 +700,19 @@ li {
   display: block;
   width: 100%;
   height: auto;
+}
+
+/* v2: portrait develops from monochrome to full color on hover —
+   hover-capable devices only, touch users always see full color */
+@media (hover: hover) and (pointer: fine) {
+  .why-portrait img {
+    filter: grayscale(1);
+    transition: filter 0.5s ease;
+  }
+
+  .why-portrait:hover img {
+    filter: grayscale(0);
+  }
 }
 
 [data-theme="light"] .why-portrait {
