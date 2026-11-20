@@ -3685,7 +3685,7 @@ html.fx-armed #introCurtain {
 
 .pw1 { --rot: -3deg;  width: 78%; top: 0;    left: 0;    z-index: 3; }
 .pw2 { --rot: 2.5deg; width: 62%; top: 8%;   right: -2%; z-index: 2; }
-.pw3 { --rot: -1.5deg; width: 56%; bottom: -6%; right: 6%; z-index: 4; }
+.pw3 { --rot: -1.5deg; width: 56%; bottom: 4%; right: 6%; z-index: 4; }
 
 .chrome-status.live-note {
   color: var(--accent-secondary);
@@ -4289,14 +4289,14 @@ html.fx-armed #introCurtain {
   .proof-stack { height: 480px; margin-top: 1.5rem; }
   .pw1 { width: 88%; }
   .pw2 { width: 66%; top: 34%; }
-  .pw3 { width: 62%; bottom: -12%; right: 0; }
+  .pw3 { width: 62%; bottom: 2%; right: 0; }
 }
 
 @media (max-width: 575.98px) {
   .proof-stack { height: 400px; }
   .pw1 { width: 92%; }
   .pw2 { width: 74%; top: 46%; right: -4%; }
-  .pw3 { width: 66%; bottom: -10%; right: 2%; }
+  .pw3 { width: 66%; bottom: 2%; right: 2%; }
   .live-feed { min-height: 230px; }
   .quote-area { margin-top: 2.4rem; }
 }
