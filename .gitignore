@@ -1,0 +1,43 @@
+# Old files (kept for reference)
+# index.html
+# simplified.css
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node modules (if using Node.js)
+node_modules/
+package-lock.json
+
+# Build files
+dist/
+build/
+
+# Environment files
+.env
+.env.local
+
+# Logs
+*.log
+npm-debug.log*
+
+# Backup files
+*.bak
+*.backup
+
+# Temporary files
+*.tmp
+.cache/
+# Old site version (broken git history, superseded)
+legacy/
+
+# ZCode session artifacts
+.zcode/

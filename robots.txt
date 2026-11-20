@@ -1,0 +1,21 @@
+# robots.txt for Jong Abawag Portfolio
+
+User-agent: *
+Allow: /
+
+# Disallow specific files if needed
+Disallow: /private/
+Disallow: /.git/
+
+# Sitemap location
+Sitemap: https://jongabawag.github.io/sitemap.xml
+
+# Crawl-delay (optional, respectful crawling)
+Crawl-delay: 1
+
+# Popular search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /

@@ -1,0 +1,2062 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jong Abawag | Business Applications Developer | Available for Hire</title>
+    <meta name="description" content="Business Applications Developer building practical digital solutions — point-of-sale systems, digital ledgers, inventory tools, and web applications — that streamline business operations. Currently available for full-time opportunities.">
+    <meta name="keywords" content="Business Applications Developer, Business Systems, React Developer, Web Application Developer, Point-of-Sale Systems, Inventory Systems, Workflow Automation, API Integrations, JavaScript Developer, Available for Hire, Remote Developer">
+    <meta name="author" content="Jong Abawag">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jongabawag.github.io/">
+    <meta property="og:title" content="Jong Abawag | Business Applications Developer">
+    <meta property="og:description" content="Business Applications Developer building practical digital solutions that streamline business operations. Currently available for full-time opportunities.">
+    <meta property="og:image" content="https://jongabawag.github.io/images/profile.jpg?v=2">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://jongabawag.github.io/">
+    <meta name="twitter:title" content="Jong Abawag | Business Applications Developer">
+    <meta name="twitter:description" content="Business Applications Developer building practical digital solutions for business operations. Available for hire!">
+    <meta name="twitter:image" content="https://jongabawag.github.io/images/profile.jpg?v=2">
+
+    <!-- Performance Optimization -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="./images/profile.jpg?v=2" as="image">
+    <link rel="preload" href="./portfolio.css?v=49" as="style">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Enhanced Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="./portfolio.css?v=49">
+
+    <!-- Cinematic FX: arm the intro curtain before first paint (skipped for reduced-motion users) -->
+    <script>
+        if(!(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)){document.documentElement.classList.add('fx-armed')}
+    </script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Jong Abawag",
+      "jobTitle": "Business Applications Developer",
+      "description": "Business Applications Developer building practical digital applications — point-of-sale systems, digital ledgers, inventory tools, and web applications — that streamline business operations",
+      "url": "https://jongabawag.github.io/",
+      "image": "https://jongabawag.github.io/images/profile.jpg",
+      "sameAs": [
+        "https://github.com/jongabawag",
+        "https://linkedin.com/in/mariefil-abawag"
+      ],
+      "knowsAbout": [
+        "MongoDB", "Express.js", "React", "Node.js", "JavaScript", "HTML5", "CSS3",
+        "Full Stack Development", "Web Development", "API Development", "Business Applications", "Workflow Automation", "Git"
+      ],
+      "seeks": {
+        "@type": "JobPosting",
+        "title": "Business Applications Developer",
+        "description": "Actively seeking full-time, remote, or junior developer roles"
+      },
+      "email": "jong.codes@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "PH"
+      },
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Freelance"
+      },
+      "alumniOf": "Zuitt Coding Bootcamp"
+    }
+    </script>
+
+    <!-- Devicons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+    <!-- Tabler Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+</head>
+<body>
+    <!-- Skip to main content link for accessibility -->
+    <a href="#landing" class="skip-to-content">Skip to main content</a>
+
+    <!-- Scroll progress: the deliberate version of the old peeking loading bar (v2) -->
+    <div class="scroll-progress" aria-hidden="true"><i id="progressFill"></i></div>
+    <span class="scroll-pct" id="progressPct" aria-hidden="true">0% READ</span>
+
+    <!-- Cinematic intro curtain (animated and removed by GSAP; never armed for reduced-motion users) -->
+    <div id="introCurtain" aria-hidden="true">
+        <div class="intro-mark">JA<span>.</span></div>
+        <div class="intro-line"></div>
+    </div>
+
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar-nav" id="sidebarNav">
+        <button class="sidebar-toggle" id="sidebarToggle" aria-label="Toggle sidebar">
+            <span class="toggle-icon"><i class="ti ti-menu-2"></i></span>
+        </button>
+        <div class="sidebar-header">
+            <a class="nav-logo" href="#landing">JA</a>
+        </div>
+        <div class="sidebar-nav-links">
+            <a class="nav-link" href="#landing">
+                <span class="nav-icon"><i class="ti ti-home"></i></span>
+                <span class="nav-text">Home</span>
+            </a>
+            <a class="nav-link" href="#projects">
+                <span class="nav-icon"><i class="ti ti-rocket"></i></span>
+                <span class="nav-text">Projects</span>
+            </a>
+            <a class="nav-link" href="#tools">
+                <span class="nav-icon"><i class="ti ti-code"></i></span>
+                <span class="nav-text">Skills</span>
+            </a>
+            <a class="nav-link" href="testimonials.html">
+                <span class="nav-icon"><i class="ti ti-message-star"></i></span>
+                <span class="nav-text">Testimonials</span>
+            </a>
+            <a class="nav-link" href="#contact">
+                <span class="nav-icon"><i class="ti ti-mail"></i></span>
+                <span class="nav-text">Contact</span>
+            </a>
+        </div>
+        <div class="sidebar-footer">
+            <a class="btn-coral-small" href="#contact"><i class="ti ti-rocket"></i> <span>Hire Me</span></a>
+            <button class="theme-toggle-sidebar" id="themeToggle" aria-label="Toggle theme">
+                <span class="icon"><i class="ti ti-sun-moon"></i></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="landing">
+        <!-- Ghost portrait: oversized, faded duotone backdrop — atmosphere, not a portrait card -->
+        <div class="ghost-portrait" aria-hidden="true"></div>
+        <!-- Hidden case-code trail: phrases light up only as the cursor passes over them -->
+        <div class="hero-secrets" aria-hidden="true">
+            <span style="--x:55%; --y:14%">CASE 01 · RETAIL · POS</span>
+            <span style="--x:74%; --y:33%">CASE 02 · RETAIL · LEDGER</span>
+            <span style="--x:57%; --y:56%">CASE 03 · LOGISTICS · TRACKER</span>
+            <span style="--x:79%; --y:74%">CASE 04 · MEATSHOP · LEDGER</span>
+            <span style="--x:30%; --y:88%">FLASK + SQLITE · JAVASCRIPT · REACT</span>
+        </div>
+        <div class="container">
+            <div class="row align-items-center gy-5">
+                <!-- Content Column -->
+                <div class="col-12">
+                    <div class="hero-content">
+                        <span class="text-64ffda">Hi, I'm</span>
+                        <!-- v2: name + role as byline; the value statement is the hero lead -->
+                        <div class="hero-byline">
+                            <span class="byline-name">Jong Abawag</span>
+                            <span class="byline-sep" aria-hidden="true">·</span>
+                            <p class="typing-text"><span class="typing-text-content">Business Applications Developer</span><span class="typing-cursor" style="display: none;">|</span></p>
+                        </div>
+                        <h1 class="hero-statement" aria-label="I build apps that run real businesses."><span aria-hidden="true"><span class="wm"><span class="wd">I</span></span> <span class="wm"><span class="wd">build</span></span> <span class="wm"><span class="wd">apps</span></span> <span class="wm"><span class="wd">that</span></span> <span class="wm"><span class="wd">run</span></span> <span class="wm"><span class="wd hot">real</span></span> <span class="wm"><span class="wd hot">businesses.</span></span></span></h1>
+
+                        <p class="hero-tagline mb-4">
+                            Turning business needs into <span class="teal-highlight">practical digital solutions</span>
+                            with <span class="coral-highlight">daily operations</span> at the core
+                        </p>
+
+                        <p class="hero-description mb-4">
+                            I develop practical digital applications and technology solutions that help businesses
+                            improve their daily operations, organize information, and streamline workflows —
+                            from point-of-sale systems and digital ledgers to web applications.
+                        </p>
+
+                        <!-- Quick Info Bar -->
+                        <div class="quick-info-bar mb-4">
+                            <div class="info-item">
+                                <i class="ti ti-home"></i>
+                                <span class="info-text">Remote-Friendly</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="ti ti-map-pin"></i>
+                                <span class="info-text">Open to Relocation</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="ti ti-stack-2"></i>
+                                <span class="info-text">React & Database-Driven Apps</span>
+                            </div>
+                        </div>
+
+                        <div class="hero-socials mb-4">
+                            <a href="mailto:jong.codes@gmail.com" class="hero-social" aria-label="Email"><i class="ti ti-mail"></i><span>Email</span></a>
+                            <a href="https://linkedin.com/in/mariefil-abawag" target="_blank" rel="noopener" class="hero-social" aria-label="LinkedIn"><i class="ti ti-brand-linkedin"></i><span>LinkedIn</span></a>
+                            <a href="https://github.com/jongabawag" target="_blank" rel="noopener" class="hero-social" aria-label="GitHub"><i class="ti ti-brand-github"></i><span>GitHub</span></a>
+                        </div>
+
+                        <div class="hero-buttons hero-buttons-quiet">
+                            <a href="#contact" class="hero-text-link"><i class="ti ti-rocket"></i> Hire Me</a>
+                            <a href="#projects" class="hero-text-link"><i class="ti ti-eye"></i> View My Work</a>
+                            <!-- Résumé link commented out until resume.pdf exists in the project root (currently 404s) -->
+                            <!-- <a href="./resume.pdf" target="_blank" rel="noopener" class="hero-text-link"><i class="ti ti-file-download"></i> Résumé</a> -->
+                        </div>
+
+                        <!-- Ops status echo: one factual line, status-page style -->
+                        <div class="hero-ops slide-up">
+                            <span class="ops-item"><i class="ops-dot" aria-hidden="true"></i>1 app live in production</span>
+                            <span class="ops-item"><i class="ops-ring" aria-hidden="true"></i>3 demos online</span>
+                            <span class="ops-item"><i class="ops-dash" aria-hidden="true"></i>2 builds in progress</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proof band: floating app windows + one live simulated feed (v2) -->
+    <section id="proof" class="proof-band" aria-label="Real app screens">
+        <div class="container">
+            <div class="section-kicker fade-in">
+                <span class="kicker-idx">00 — Proof</span>
+                <span class="kicker-ref">Real screens · one simulated feed</span>
+            </div>
+        </div>
+        <div class="proof-stack" id="proofStack">
+            <div class="app-window pw1"><div class="float" style="--dur:7s">
+                <div class="proof-win">
+                    <div class="chrome-bar" aria-hidden="true">
+                        <span class="chrome-dots"><i></i><i></i><i></i></span>
+                        <span class="chrome-title">Tindahan POS — register</span>
+                        <span class="chrome-status pulse">Demo</span>
+                    </div>
+                    <img src="./images/tindahan-pos.png" alt="Tindahan POS register screen">
+                </div>
+            </div></div>
+            <div class="app-window pw2"><div class="float" style="--dur:9s">
+                <div class="proof-win">
+                    <div class="chrome-bar" aria-hidden="true">
+                        <span class="chrome-dots"><i></i><i></i><i></i></span>
+                        <span class="chrome-title">MariClaire Tracker — tubigan ops</span>
+                        <span class="chrome-status pulse">Demo</span>
+                    </div>
+                    <img src="./images/tubigan.png" alt="Water delivery tracker screen">
+                </div>
+            </div></div>
+            <div class="app-window pw3"><div class="float" style="--dur:11s">
+                <div class="proof-win">
+                    <div class="chrome-bar" aria-hidden="true">
+                        <span class="chrome-dots"><i></i><i></i><i></i></span>
+                        <span class="chrome-title">Tindahan POS — checkout feed</span>
+                        <span class="chrome-status live-note">Live · simulated</span>
+                    </div>
+                    <div class="live-feed" id="posFeed">
+                        <div class="feed-row"><b>Sardines (large) ×2</b><span>₱68</span></div>
+                        <div class="feed-row"><b>Coffee 3-in-1 ×5</b><span>₱55</span></div>
+                        <div class="feed-row"><b>Rice 1kg</b><span>₱52</span></div>
+                        <div class="feed-row"><b>Load ₱60</b><span>₱60</span></div>
+                        <div class="feed-row"><b>Softdrinks ×3</b><span>₱90</span></div>
+                        <div class="feed-total"><span>TOTAL</span><b>₱325</b></div>
+                        <div class="feed-badge">✓ SALE RECORDED</div>
+                    </div>
+                </div>
+            </div></div>
+        </div>
+        <p class="proof-hint">move your cursor over the stack —</p>
+    </section>
+
+<!-- Projects Section -->
+    <section id="projects" class="section-enhanced">
+        <div class="container">
+            <div class="section-kicker fade-in">
+                <span class="kicker-idx">01 — Work</span>
+                <span class="kicker-ref">All 4 client tools shipped</span>
+            </div>
+            <h2 class="section-title fade-in">Things I've Built</h2>
+            <p class="section-subheading">
+                Real tools built for real businesses — problem, solution, and impact for each one
+            </p>
+            <div class="projects-carousel-wrapper">
+                <button class="carousel-arrow carousel-prev" id="projectsPrev" aria-label="Previous projects" type="button"><i class="ti ti-chevron-left"></i></button>
+                <div class="projects-carousel" id="projectsCarousel" aria-label="Featured projects carousel">
+                <div class="project-slide">
+                    <div class="project-card fade-in" data-tilt>
+                        <div class="chrome-bar" aria-hidden="true">
+                            <span class="chrome-dots"><i></i><i></i><i></i></span>
+                            <span class="chrome-title">Tindahan POS — register</span>
+                            <span class="chrome-status pulse">Demo</span>
+                        </div>
+                        <div class="project-image">
+                            <img src="./images/tindahan-pos.png" class="card-img" alt="Tindahan POS - sari-sari store point-of-sale register" loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <span class="case-code">CASE 01 · RETAIL · POS</span>
+                            <h5>Tindahan POS — Sari-sari Store Register</h5>
+                            <p class="project-description">
+                                <strong>Problem:</strong> Small tindahan owners track every sale by hand and can't see daily totals at a glance.<br>
+                                <strong>Solution:</strong> Touch-friendly point-of-sale register with PIN-protected staff access and a guided checkout flow.<br>
+                                <strong>Impact:</strong> Real client work — built for a local store owner and deployed as a live demo.
+                            </p>
+                            <div class="project-tags">
+                                <span class="project-tag coral-tag">JavaScript</span>
+                                <span class="project-tag">Mobile-first</span>
+                                <span class="project-tag coral-tag">PIN Auth</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://jongabawag.github.io/tindahan-pos-demo/" target="_blank" class="project-link"><i class="ti ti-arrow-up-right"></i>Demo</a>
+                                <span class="project-link-note">Built for a local store owner</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-slide">
+                    <div class="project-card fade-in" data-tilt>
+                        <div class="chrome-bar" aria-hidden="true">
+                            <span class="chrome-dots"><i></i><i></i><i></i></span>
+                            <span class="chrome-title">Tindahan Ledger — daily checklist</span>
+                            <span class="chrome-status pulse">Demo</span>
+                        </div>
+                        <div class="project-image">
+                            <img src="./images/tindahan-ledger.png" class="card-img" alt="Tindahan Ledger - daily store checklist, cash count and customer credit app" loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <span class="case-code">CASE 02 · RETAIL · LEDGER</span>
+                            <h5>Tindahan Ledger — Daily Store Checklist</h5>
+                            <p class="project-description">
+                                <strong>Problem:</strong> Store owners juggle daily tasks, cash counts, and customer credit (utang) on paper.<br>
+                                <strong>Solution:</strong> Mobile-first daily checklist with cash counting, customer credit tracking, and PIN-protected owner/staff access.<br>
+                                <strong>Impact:</strong> Second tool shipped for the same store owner — simple enough for non-technical daily use.
+                            </p>
+                            <div class="project-tags">
+                                <span class="project-tag coral-tag">JavaScript</span>
+                                <span class="project-tag">Mobile-first</span>
+                                <span class="project-tag coral-tag">PWA</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://jongabawag.github.io/tindahan-ledger-demo/" target="_blank" class="project-link"><i class="ti ti-arrow-up-right"></i>Demo</a>
+                                <span class="project-link-note">Same client · second tool</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-slide">
+                    <div class="project-card fade-in" data-tilt>
+                        <div class="chrome-bar" aria-hidden="true">
+                            <span class="chrome-dots"><i></i><i></i><i></i></span>
+                            <span class="chrome-title">MariClaire Tracker — tubigan ops</span>
+                            <span class="chrome-status pulse">Demo</span>
+                        </div>
+                        <div class="project-image">
+                            <img src="./images/tubigan.png" class="card-img" alt="MariClaire Water Delivery - tubigan delivery and sales tracker dashboard" loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <span class="case-code">CASE 03 · LOGISTICS · TRACKER</span>
+                            <h5>MariClaire Water Delivery — Tubigan Tracker</h5>
+                            <p class="project-description">
+                                <strong>Problem:</strong> A water refilling station tracks delivery trips, counter sales, and driver cash on paper — the owner can't see today's numbers at a glance.<br>
+                                <strong>Solution:</strong> Flask + SQLite tracker with owner, dispatcher, and driver roles — delivery trips, customer balances, inventory, settlements, and daily reports.<br>
+                                <strong>Impact:</strong> Multi-role operations for a real water station — each driver sees only their trips, the owner sees every peso.
+                            </p>
+                            <div class="project-tags">
+                                <span class="project-tag coral-tag">Python</span>
+                                <span class="project-tag">Flask</span>
+                                <span class="project-tag coral-tag">SQLite</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://jongabawag.github.io/tubigan-demo/" target="_blank" class="project-link"><i class="ti ti-arrow-up-right"></i>Demo</a>
+                                <span class="project-link-note">Owner · dispatcher · driver roles</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-slide">
+                    <div class="project-card fade-in" data-tilt>
+                        <div class="chrome-bar" aria-hidden="true">
+                            <span class="chrome-dots"><i></i><i></i><i></i></span>
+                            <span class="chrome-title">Botsi's Meatshop — butcher's ledger</span>
+                            <span class="chrome-status pulse">Demo</span>
+                        </div>
+                        <div class="project-image">
+                            <img src="./images/meatshop.png" class="card-img" alt="Botsi's Meatshop - butcher's sales and stock ledger" loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <span class="case-code">CASE 04 · MEATSHOP · LEDGER</span>
+                            <h5>Botsi's Meatshop — Butcher's Ledger</h5>
+                            <p class="project-description">
+                                <strong>Problem:</strong> Meatshops buy live animals and cut them into retail portions — without tracking, the true cost per kilo and daily profit are guesswork.<br>
+                                <strong>Solution:</strong> Butcher's ledger that follows each animal from purchase (ihaw) to dressed cuts, with stock movements, cashier accounts, and per-sale profit reports.<br>
+                                <strong>Impact:</strong> Every animal's real cost per kilo and every sale's profit, computed automatically — staff see sales only, owners see costs.
+                            </p>
+                            <div class="project-tags">
+                                <span class="project-tag coral-tag">JavaScript</span>
+                                <span class="project-tag">Role-based</span>
+                                <span class="project-tag coral-tag">Reports</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://jongabawag.github.io/meatshop-demo/" target="_blank" class="project-link"><i class="ti ti-arrow-up-right"></i>Demo</a>
+                                <span class="project-link-note">Per-kilo cost · per-sale profit</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- TEMPORARILY COMMENTED OUT 2026-11-18 (bootcamp projects being fixed/reposted later): Blog, Movie, Fitness, E-Commerce -->
+                <!--
+                <div class="project-slide">
+                    <div class="project-card fade-in" data-tilt>
+                        <div class="project-image">
+                            <img src="./images/blog-app.png" class="card-img" alt="Blog Application" loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <h5>Blog Application</h5>
+                            <p class="project-description">
+                                <strong>Problem:</strong> Content creators needed an intuitive platform.<br>
+                                <strong>Solution:</strong> Full-stack platform with JWT auth & real-time updates.<br>
+                                <strong>Impact:</strong> Demonstrates full-stack capability & database design.
+                            </p>
+                            <div class="project-tags">
+                                <span class="project-tag coral-tag">React</span>
+                                <span class="project-tag">Node.js</span>
+                                <span class="project-tag coral-tag">MongoDB</span>
+                                <span class="project-tag">Express</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://blog-client-eight-blond.vercel.app/" target="_blank" class="project-link me-2"><i class="ti ti-arrow-up-right"></i>Demo</a>
+                                <a href="#" target="_blank" class="project-link"><i class="ti ti-code"></i>Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-slide">
+                    <div class="project-card fade-in" data-tilt>
+                        <div class="project-image">
+                            <img src="./images/movie-app.png" class="card-img" alt="Movie Database Application" loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <h5>Movie Database Application</h5>
+                            <p class="project-description">
+                                <strong>Problem:</strong> Movie enthusiasts needed a comprehensive search platform.<br>
+                                <strong>Solution:</strong> Dynamic app with advanced search & user ratings.<br>
+                                <strong>Impact:</strong> Showcases API integration & UX design.
+                            </p>
+                            <div class="project-tags">
+                                <span class="project-tag coral-tag">React</span>
+                                <span class="project-tag">API Integration</span>
+                                <span class="project-tag">CSS3</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://movie-app-client-rho.vercel.app/" target="_blank" class="project-link me-2"><i class="ti ti-arrow-up-right"></i>Demo</a>
+                                <a href="#" target="_blank" class="project-link"><i class="ti ti-code"></i>Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-slide">
+                    <div class="project-card fade-in" data-tilt>
+                        <div class="project-image">
+                            <img src="./images/fitness-app.png" class="card-img" alt="Fitness Tracking Platform" loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <h5>Fitness Tracking Platform</h5>
+                            <p class="project-description">
+                                <strong>Problem:</strong> Fitness enthusiasts needed comprehensive workout tracking.<br>
+                                <strong>Solution:</strong> Full-featured platform with custom routines & progress tracking.<br>
+                                <strong>Impact:</strong> Demonstrates complex state management & data visualization.
+                            </p>
+                            <div class="project-tags">
+                                <span class="project-tag">React</span>
+                                <span class="project-tag coral-tag">Node.js</span>
+                                <span class="project-tag coral-tag">MongoDB</span>
+                                <span class="project-tag">JWT Auth</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://fitness-app-client-teal-six.vercel.app/" target="_blank" class="project-link me-2"><i class="ti ti-arrow-up-right"></i>Demo</a>
+                                <a href="#" target="_blank" class="project-link"><i class="ti ti-code"></i>Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-slide">
+                    <div class="project-card fade-in" data-tilt>
+                        <div class="project-image">
+                            <img src="./images/capstone.png" class="card-img" alt="E-Commerce Platform" loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <h5>E-Commerce Platform</h5>
+                            <p class="project-description">
+                                <strong>Problem:</strong> Small businesses needed affordable online sales solutions.<br>
+                                <strong>Solution:</strong> Complete e-commerce platform with payment integration.<br>
+                                <strong>Impact:</strong> Full-stack development & payment processing.
+                            </p>
+                            <div class="project-tags">
+                                <span class="project-tag coral-tag">React</span>
+                                <span class="project-tag">Node.js</span>
+                                <span class="project-tag coral-tag">MongoDB</span>
+                                <span class="project-tag">Stripe</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="http://zuitt-bootcamp-prod-530-8526-abawag.s3-website.us-east-1.amazonaws.com/" target="_blank" class="project-link me-2"><i class="ti ti-arrow-up-right"></i>Demo</a>
+                                <a href="#" target="_blank" class="project-link"><i class="ti ti-code"></i>Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                -->
+                </div>
+                <button class="carousel-arrow carousel-next" id="projectsNext" aria-label="Next projects" type="button"><i class="ti ti-chevron-right"></i></button>
+            </div>
+            <div class="carousel-dots" id="projectsDots" aria-label="Carousel pagination"></div>
+        </div>
+    </section>
+
+    <!-- Honesty marquee 1: true facts only (v2) -->
+    <div class="honesty-marquee mq-teal" style="--speed:30s" aria-hidden="true">
+        <div class="mq-track">
+            <span class="mq-item">SHIPPED <span class="star">✦</span> IN USE DAILY <span class="star">✦</span> 1 APP LIVE IN PRODUCTION <span class="star">✦</span> 4 TOOLS FOR REAL BUSINESSES <span class="star">✦</span></span>
+            <span class="mq-item">SHIPPED <span class="star">✦</span> IN USE DAILY <span class="star">✦</span> 1 APP LIVE IN PRODUCTION <span class="star">✦</span> 4 TOOLS FOR REAL BUSINESSES <span class="star">✦</span></span>
+        </div>
+    </div>
+
+    <!-- Skills Section -->
+    <section id="tools" class="section-enhanced">
+        <div class="container">
+            <h2 class="section-title fade-in">Skills & Tools</h2>
+            <p class="section-subheading">
+                Technologies and tools I use to bring ideas to life
+            </p>
+        </div>
+        <div class="skills-strip fade-in" aria-label="Technologies and tools I use">
+            <div class="skills-track">
+                <div class="skills-set">
+                    <div class="skill-chip"><i class="devicon-html5-plain colored"></i><span>HTML5</span></div>
+                    <div class="skill-chip"><i class="devicon-css3-plain colored"></i><span>CSS3</span></div>
+                    <div class="skill-chip"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+                    <div class="skill-chip"><i class="devicon-typescript-plain colored"></i><span>TypeScript</span></div>
+                    <div class="skill-chip"><i class="devicon-react-original colored"></i><span>React</span></div>
+                    <div class="skill-chip"><i class="devicon-nextjs-plain colored"></i><span>Next.js</span></div>
+                    <div class="skill-chip"><i class="devicon-bootstrap-plain colored"></i><span>Bootstrap</span></div>
+                    <div class="skill-chip"><i class="devicon-nodejs-plain colored"></i><span>Node.js</span></div>
+                    <div class="skill-chip"><i class="devicon-express-original colored"></i><span>Express</span></div>
+                    <div class="skill-chip"><i class="devicon-mongodb-plain colored"></i><span>MongoDB</span></div>
+                    <div class="skill-chip"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+                    <div class="skill-chip"><i class="devicon-django-plain colored"></i><span>Django</span></div>
+                    <div class="skill-chip"><i class="devicon-git-plain colored"></i><span>Git</span></div>
+                </div>
+                <div class="skills-set" aria-hidden="true">
+                    <div class="skill-chip"><i class="devicon-html5-plain colored"></i><span>HTML5</span></div>
+                    <div class="skill-chip"><i class="devicon-css3-plain colored"></i><span>CSS3</span></div>
+                    <div class="skill-chip"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+                    <div class="skill-chip"><i class="devicon-typescript-plain colored"></i><span>TypeScript</span></div>
+                    <div class="skill-chip"><i class="devicon-react-original colored"></i><span>React</span></div>
+                    <div class="skill-chip"><i class="devicon-nextjs-plain colored"></i><span>Next.js</span></div>
+                    <div class="skill-chip"><i class="devicon-bootstrap-plain colored"></i><span>Bootstrap</span></div>
+                    <div class="skill-chip"><i class="devicon-nodejs-plain colored"></i><span>Node.js</span></div>
+                    <div class="skill-chip"><i class="devicon-express-original colored"></i><span>Express</span></div>
+                    <div class="skill-chip"><i class="devicon-mongodb-plain colored"></i><span>MongoDB</span></div>
+                    <div class="skill-chip"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+                    <div class="skill-chip"><i class="devicon-django-plain colored"></i><span>Django</span></div>
+                    <div class="skill-chip"><i class="devicon-git-plain colored"></i><span>Git</span></div>
+                </div>
+                <div class="skills-set" aria-hidden="true">
+                    <div class="skill-chip"><i class="devicon-html5-plain colored"></i><span>HTML5</span></div>
+                    <div class="skill-chip"><i class="devicon-css3-plain colored"></i><span>CSS3</span></div>
+                    <div class="skill-chip"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+                    <div class="skill-chip"><i class="devicon-typescript-plain colored"></i><span>TypeScript</span></div>
+                    <div class="skill-chip"><i class="devicon-react-original colored"></i><span>React</span></div>
+                    <div class="skill-chip"><i class="devicon-nextjs-plain colored"></i><span>Next.js</span></div>
+                    <div class="skill-chip"><i class="devicon-bootstrap-plain colored"></i><span>Bootstrap</span></div>
+                    <div class="skill-chip"><i class="devicon-nodejs-plain colored"></i><span>Node.js</span></div>
+                    <div class="skill-chip"><i class="devicon-express-original colored"></i><span>Express</span></div>
+                    <div class="skill-chip"><i class="devicon-mongodb-plain colored"></i><span>MongoDB</span></div>
+                    <div class="skill-chip"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+                    <div class="skill-chip"><i class="devicon-django-plain colored"></i><span>Django</span></div>
+                    <div class="skill-chip"><i class="devicon-git-plain colored"></i><span>Git</span></div>
+                </div>
+                <div class="skills-set" aria-hidden="true">
+                    <div class="skill-chip"><i class="devicon-html5-plain colored"></i><span>HTML5</span></div>
+                    <div class="skill-chip"><i class="devicon-css3-plain colored"></i><span>CSS3</span></div>
+                    <div class="skill-chip"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+                    <div class="skill-chip"><i class="devicon-typescript-plain colored"></i><span>TypeScript</span></div>
+                    <div class="skill-chip"><i class="devicon-react-original colored"></i><span>React</span></div>
+                    <div class="skill-chip"><i class="devicon-nextjs-plain colored"></i><span>Next.js</span></div>
+                    <div class="skill-chip"><i class="devicon-bootstrap-plain colored"></i><span>Bootstrap</span></div>
+                    <div class="skill-chip"><i class="devicon-nodejs-plain colored"></i><span>Node.js</span></div>
+                    <div class="skill-chip"><i class="devicon-express-original colored"></i><span>Express</span></div>
+                    <div class="skill-chip"><i class="devicon-mongodb-plain colored"></i><span>MongoDB</span></div>
+                    <div class="skill-chip"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+                    <div class="skill-chip"><i class="devicon-django-plain colored"></i><span>Django</span></div>
+                    <div class="skill-chip"><i class="devicon-git-plain colored"></i><span>Git</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="container py-5 section-enhanced">
+        <div class="section-kicker fade-in">
+            <span class="kicker-idx">02 — Training</span>
+            <span class="kicker-ref">Bootcamp &amp; short courses</span>
+        </div>
+        <h2 class="section-title fade-in">Where I Trained</h2>
+        <p class="section-subheading">
+            The bootcamp behind every build on this page — plus short courses that sharpened specific skills
+        </p>
+        <div class="cert-ledger slide-up">
+            <div class="cert-main-row">
+                <span class="cert-idx">CERT-001</span>
+                <div class="cert-body">
+                    <strong class="cert-claim">Full-Stack Web Development (MERN)</strong>
+                    <span class="cert-detail">Intensive bootcamp program — the training under every build on this page.</span>
+                </div>
+                <span class="cert-note">Zuitt Coding Bootcamp</span>
+            </div>
+            <div class="cert-cells">
+                <div class="cert-cell">
+                    <i class="devicon-mongodb-plain colored" aria-hidden="true"></i>
+                    <strong>MongoDB</strong>
+                    <span class="cert-issuer">Zuitt Coding Bootcamp</span>
+                </div>
+                <div class="cert-cell">
+                    <i class="devicon-python-plain colored" aria-hidden="true"></i>
+                    <strong>Python</strong>
+                    <span class="cert-issuer">Zuitt Coding Bootcamp</span>
+                </div>
+                <div class="cert-cell">
+                    <i class="devicon-django-plain colored" aria-hidden="true"></i>
+                    <strong>Django</strong>
+                    <span class="cert-issuer">Zuitt Coding Bootcamp</span>
+                </div>
+                <div class="cert-cell">
+                    <i class="devicon-amazonwebservices-plain-wordmark colored" aria-hidden="true"></i>
+                    <strong>AWS Cloud</strong>
+                    <span class="cert-issuer">Zuitt Coding Bootcamp</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Hire Me Section -->
+    <section class="container py-5 section-enhanced band-teal-tint">
+        <div class="section-kicker fade-in">
+            <span class="kicker-idx">03 — Why Me</span>
+            <span class="kicker-ref">The short version</span>
+        </div>
+        <h2 class="section-title fade-in">Why Work With Me</h2>
+        <div class="why-intro slide-up">
+            <p>
+                I build practical business applications — point-of-sale systems, digital ledger platforms,
+                inventory tools, and web applications — that help real businesses organize information and
+                streamline daily operations.
+            </p>
+            <p>
+                Hands-on with frontend development in React and database-driven application development,
+                and continuously expanding into workflow automation, API integrations, and AI-powered applications.
+            </p>
+        </div>
+        <!-- Outcome report: the stats band restyled as a business report (ledger motif) -->
+        <div class="outcome-report slide-up" role="group" aria-label="Outcome report — key figures">
+            <div class="report-head">
+                <span class="report-doc">Outcome Report — No. 001</span>
+                <span class="report-ref">2025–2026 · Shipped work</span>
+            </div>
+            <div class="report-cols">
+                <div class="report-cell">
+                    <span class="stat-number">8</span>
+                    <span class="stat-label">Projects Built</span>
+                    <span class="stat-note">bootcamp + client</span>
+                </div>
+                <div class="report-cell">
+                    <span class="stat-number">4</span>
+                    <span class="stat-label">Built for Real Businesses</span>
+                    <span class="stat-note">retail · logistics · food service</span>
+                </div>
+                <div class="report-cell hot">
+                    <span class="stat-number">1</span>
+                    <span class="stat-label">Live Client App</span>
+                    <span class="stat-note"><i class="ops-dot" aria-hidden="true"></i>deployed 2026-09-30</span>
+                </div>
+                <div class="report-cell">
+                    <span class="stat-number">3</span>
+                    <span class="stat-label">Industries Worked In</span>
+                    <span class="stat-note">see the work above</span>
+                </div>
+            </div>
+            <div class="report-foot">
+                <span><i class="ops-dot" aria-hidden="true"></i>Counts shipped work only</span>
+                <span>All demos public</span>
+            </div>
+        </div>
+        <div class="evidence-rows" role="list" aria-label="Evidence — why the numbers hold">
+            <div class="evidence-row slide-up" role="listitem">
+                <span class="ev-idx" aria-hidden="true">01</span>
+                <div class="ev-body">
+                    <strong class="ev-claim">I've worked the operations I now build for</strong>
+                    <p class="ev-detail">Career shifter — business management and hospitality came first. I read a workflow before I read code.</p>
+                </div>
+                <span class="ev-note">Business side → code</span>
+            </div>
+            <div class="evidence-row slide-up" role="listitem">
+                <span class="ev-idx" aria-hidden="true">02</span>
+                <div class="ev-body">
+                    <strong class="ev-claim">I translate between the floor and the app</strong>
+                    <p class="ev-detail">Owners describe their process in plain words; the working tool comes back — and stays understandable.</p>
+                </div>
+                <span class="ev-note">"Laid out the solutions" — client</span>
+            </div>
+            <div class="evidence-row slide-up" role="listitem">
+                <span class="ev-idx" aria-hidden="true">03</span>
+                <div class="ev-body">
+                    <strong class="ev-claim">I ship, then hand it over</strong>
+                    <p class="ev-detail">Every build ends deployed, staff-trained, and with a plain-language guide you keep.</p>
+                </div>
+                <span class="ev-note">Intake → Build → Deploy → Handover</span>
+            </div>
+        </div>
+        <div class="why-cta">
+            <a href="#contact" class="hero-text-link"><i class="ti ti-arrow-right"></i>Start the conversation</a>
+        </div>
+    </section>
+
+    <!-- Testimonials Teaser -->
+    <section class="testimonials-teaser section-enhanced">
+        <div class="container">
+            <div class="section-kicker fade-in">
+                <span class="kicker-idx">04 — Testimonials</span>
+                <span class="kicker-ref">From people I've worked with</span>
+            </div>
+            <h2 class="section-title fade-in">Kind Words</h2>
+            <p class="section-subheading">
+                Real feedback from the business owners I've built for
+            </p>
+            <div class="quote-area slide-up">
+                <span class="bigmark" aria-hidden="true">&ldquo;</span>
+                <div class="quotes" id="quoteQuotes">
+                    <div class="q on">
+                        <blockquote>Jong built the POS around our preferences — <span class="hl">very user-friendly</span>, everything we need is there, and none of what we don't.</blockquote>
+                        <div class="attr"><b>Convenience Store Owner</b>Tindahan POS client <span class="ref">· REF-01</span></div>
+                    </div>
+                    <div class="q">
+                        <blockquote>I used to struggle tracking my drivers' deliveries and sales — <span class="hl">tracking my operations is now so much easier</span> and more organized.</blockquote>
+                        <div class="attr"><b>Margie</b>MariClaire Water Delivery <span class="ref">· REF-02</span></div>
+                    </div>
+                    <div class="q">
+                        <blockquote>We didn't know where to start — <span class="hl">Jong laid out the solutions</span> and made running our store so much easier.</blockquote>
+                        <div class="attr"><b>Convenience Store Owner</b>Tindahan Ledger client <span class="ref">· REF-03</span></div>
+                    </div>
+                </div>
+                <div class="quote-pager" role="group" aria-label="Choose testimonial">
+                    <button class="on" data-i="0">REF-01</button>
+                    <button data-i="1">REF-02</button>
+                    <button data-i="2">REF-03</button>
+                    <span class="auto">auto-rotates · hover pauses</span>
+                </div>
+            </div>
+            <div class="why-cta">
+                <a href="testimonials.html" class="hero-text-link"><i class="ti ti-message-star"></i>Read all testimonials</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <!-- Build Process -->
+    <!-- Honesty marquee 2: true facts only (v2) -->
+    <div class="honesty-marquee mq-outline" style="--speed:34s;--dir:reverse" aria-hidden="true">
+        <div class="mq-track">
+            <span class="mq-item">AI-ASSISTED <span class="solid">·</span> HUMAN-TESTED <span class="star">✦</span> BUILT AROUND DAILY OPERATIONS <span class="star">✦</span> I REPLY WITHIN A DAY <span class="star">✦</span></span>
+            <span class="mq-item" aria-hidden="true">AI-ASSISTED <span class="solid">·</span> HUMAN-TESTED <span class="star">✦</span> BUILT AROUND DAILY OPERATIONS <span class="star">✦</span> I REPLY WITHIN A DAY <span class="star">✦</span></span>
+        </div>
+    </div>
+
+    <section id="process" class="container py-5 section-enhanced">
+        <div class="section-kicker fade-in">
+            <span class="kicker-idx">05 — Process</span>
+            <span class="kicker-ref">Same steps every time</span>
+        </div>
+        <h2 class="section-title fade-in">How an App Gets Built</h2>
+        <div class="process-track" id="processTrack">
+            <div class="process-stage">
+                <div class="process-gnum" aria-hidden="true"><span>01</span><span>02</span><span>03</span><span>04</span></div>
+                <div class="process-rail" aria-hidden="true"><i id="railFill"></i></div>
+                <span class="rail-label" aria-hidden="true">SCROLL</span>
+                <div class="process-steps">
+                    <div class="step on">
+                        <span class="s-kick">Step 01</span>
+                        <h3>Intake</h3>
+                        <p>We walk through your current process on paper — scope agreed before anything gets built.</p>
+                    </div>
+                    <div class="step">
+                        <span class="s-kick">Step 02</span>
+                        <h3>Build</h3>
+                        <p>Built with AI-assisted tooling — you see working screens early, not a big reveal at the end.</p>
+                    </div>
+                    <div class="step">
+                        <span class="s-kick">Step 03</span>
+                        <h3>Deploy</h3>
+                        <p>Hosted and secured with staff logins, then tested against your real data before go-live.</p>
+                    </div>
+                    <div class="step">
+                        <span class="s-kick">Step 04</span>
+                        <h3>Handover</h3>
+                        <p>Staff training plus a plain-language guide you keep — the app is yours to run.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-enhanced">
+        <div class="container">
+            <div class="section-kicker fade-in">
+                <span class="kicker-idx">06 — Contact</span>
+                <span class="kicker-ref">I reply within a day</span>
+            </div>
+            <h2 class="signoff-giant" aria-label="Let's build yours."><span aria-hidden="true"><span class="wd">Let's</span> <span class="wd">build</span> <span class="wd">yours<span class="period">.</span></span></span></h2>
+            <div class="row g-4 g-lg-5">
+                <!-- Left: intro + direct channels -->
+                <div class="col-lg-5 contact-intro fade-in">
+                    <span class="availability-badge"><span class="availability-dot"></span>Available for full-time roles</span>
+                    <p class="contact-lede">Got a role, a project, or just a question? The form's the fastest way to reach me — I read everything myself.</p>
+                    <ul class="contact-facts">
+                        <li><i class="ti ti-clock"></i> Replies within 24 hours</li>
+                        <li><i class="ti ti-map-pin"></i> Philippines (UTC+8) — comfortable overlapping EU mornings &amp; US evenings</li>
+                        <li><i class="ti ti-briefcase"></i> Open to remote, hybrid &amp; relocation</li>
+                    </ul>
+                    <p class="contact-direct-label">Prefer to connect directly?</p>
+                    <div class="contact-channels">
+                        <a href="mailto:jong.codes@gmail.com"><span class="channel-icon"><i class="ti ti-mail"></i></span><span class="channel-text"><strong>Email</strong><small>jong.codes@gmail.com</small></span><i class="ti ti-chevron-right channel-arrow"></i></a>
+                        <a href="https://linkedin.com/in/mariefil-abawag" target="_blank" rel="noopener"><span class="channel-icon"><i class="ti ti-brand-linkedin"></i></span><span class="channel-text"><strong>LinkedIn</strong><small>in/mariefil-abawag</small></span><i class="ti ti-chevron-right channel-arrow"></i></a>
+                        <a href="https://github.com/jongabawag" target="_blank" rel="noopener"><span class="channel-icon"><i class="ti ti-brand-github"></i></span><span class="channel-text"><strong>GitHub</strong><small>jongabawag</small></span><i class="ti ti-chevron-right channel-arrow"></i></a>
+                    </div>
+                </div>
+                <!-- Right: form -->
+                <div class="col-lg-7">
+                    <div class="contact-form fade-in">
+                        <h4 class="mb-3">Send Me a Message</h4>
+                        <form
+                            id="contact-form"
+                            action="https://formspree.io/f/xjgaznln"
+                            method="POST">
+                            <!-- Honeypot field: hidden from humans, catches bots -->
+                            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
+                            <input type="hidden" name="_subject" value="New Portfolio Inquiry">
+                            <div class="row g-3 mb-3">
+                                <div class="col-md-6">
+                                    <label class="form-label" for="name">Your Name</label>
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="John Smith" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label" for="email">Email Address</label>
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="john@company.com" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <span class="form-label d-block mb-2" id="subject-label">What's this regarding?</span>
+                                <input type="hidden" id="subject" name="subject" required>
+                                <div class="subject-chips" role="group" aria-labelledby="subject-label">
+                                    <button type="button" class="subject-chip" data-value="Job Opportunity">Job Opportunity</button>
+                                    <button type="button" class="subject-chip" data-value="Freelance Project">Freelance Project</button>
+                                    <button type="button" class="subject-chip" data-value="Collaboration">Collaboration</button>
+                                    <button type="button" class="subject-chip" data-value="General Inquiry">Just saying hi</button>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" for="message">Message</label>
+                                <textarea class="form-control" id="message" name="message" rows="4" placeholder="Tell me about the opportunity..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-coral" id="contact-submit"><i class="ti ti-send me-2"></i>Send Message</button>
+                            <div id="form-status" class="mt-2" role="status" aria-live="polite">
+                                <p id="form-success" class="fw-bold mb-0 d-none" style="color: var(--accent);"><i class="ti ti-check me-2"></i>Thanks for reaching out! I'll respond within 24 hours.</p>
+                                <p id="form-error" class="fw-bold mb-0 d-none" style="color: var(--accent-secondary);"><i class="ti ti-alert-triangle me-2"></i>Something went wrong. Please try again, or <a href="mailto:jong.codes@gmail.com" style="color: inherit;">email me directly</a>.</p>
+                            </div>
+                        </form>
+                        <div class="whats-next">
+                            <span class="whats-next-step"><strong>1</strong> I reply within 24h</span>
+                            <i class="ti ti-chevron-right"></i>
+                            <span class="whats-next-step"><strong>2</strong> Quick intro call</span>
+                            <i class="ti ti-chevron-right"></i>
+                            <span class="whats-next-step"><strong>3</strong> Clear plan &amp; next steps</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a href="#landing" class="footer-logo">jong<span>.codes</span></a>
+                    <div class="footer-socials">
+                        <a href="mailto:jong.codes@gmail.com" aria-label="Email"><i class="ti ti-mail"></i></a>
+                        <a href="https://linkedin.com/in/mariefil-abawag" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="ti ti-brand-linkedin"></i></a>
+                        <a href="https://github.com/jongabawag" target="_blank" rel="noopener" aria-label="GitHub"><i class="ti ti-brand-github"></i></a>
+                    </div>
+                </div>
+                <nav class="footer-links" aria-label="Footer">
+                    <a href="#projects">Projects</a>
+                    <a href="#tools">Tools</a>
+                    <a href="#contact">Contact</a>
+                    <a href="testimonials.html">Testimonials</a>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-status"><i class="ops-dot" aria-hidden="true"></i>All systems operational <span class="footer-sep" aria-hidden="true">·</span> AI-assisted, human-tested</p>
+                <p>Designed &amp; built by Jong Abawag <span class="footer-sep" aria-hidden="true">·</span> © <span id="copyright-year">2026</span> All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="ti ti-arrow-up"></i>
+    </button>
+
+    <!-- AI Chatbot Widget -->
+    <div class="chatbot-widget" id="chatbotWidget">
+        <!-- Chat Toggle Button -->
+        <button class="chatbot-toggle" id="chatbotToggle" aria-label="Toggle chatbot">
+            <span class="chat-icon"><i class="ti ti-message-circle"></i></span>
+            <span class="close-icon" style="display: none;"><i class="ti ti-x"></i></span>
+        </button>
+
+        <!-- Chat Window -->
+        <div class="chatbot-window" id="chatbotWindow">
+            <!-- Chat Header -->
+            <div class="chatbot-header">
+                <div class="chatbot-avatar">
+                    <div class="avatar-icon"><i class="ti ti-robot"></i></div>
+                </div>
+                <div class="chatbot-info">
+                    <h4>Jong's AI Assistant</h4>
+                    <p class="status">● Online • Usually replies instantly</p>
+                </div>
+                <button class="chatbot-minimize" id="chatbotMinimize" aria-label="Minimize chat"><i class="ti ti-minus"></i></button>
+            </div>
+
+            <!-- Chat Messages -->
+            <div class="chatbot-messages" id="chatbotMessages">
+                <div class="message bot-message">
+                    <div class="message-content">
+                        <p>👋 Hi! I'm Jong's AI assistant. I can help you learn about:</p>
+                        <ul style="margin: 10px 0; padding-left: 20px;">
+                            <li>Skills & Technologies</li>
+                            <li>Projects & Experience</li>
+                            <li>Availability & Contact</li>
+                        </ul>
+                        <p>What would you like to know?</p>
+                    </div>
+                    <span class="message-time">Just now</span>
+                </div>
+
+                <!-- Quick Questions -->
+                <div class="quick-questions" id="quickQuestions">
+                    <button class="quick-question-btn" data-question="skills"><i class="ti ti-lightbulb"></i> What are your skills?</button>
+                    <button class="quick-question-btn" data-question="available"><i class="ti ti-briefcase"></i> Are you available for work?</button>
+                    <button class="quick-question-btn" data-question="projects"><i class="ti ti-rocket"></i> Tell me about your projects</button>
+                    <button class="quick-question-btn" data-question="contact"><i class="ti ti-mail"></i> How can I reach you?</button>
+                    <button class="quick-question-btn" data-question="experience"><i class="ti ti-user"></i> What's your experience?</button>
+                    <button class="quick-question-btn" data-question="remote"><i class="ti ti-world"></i> Are you open to remote work?</button>
+                </div>
+            </div>
+
+            <!-- Chat Input -->
+            <div class="chatbot-input">
+                <input type="text" id="chatbotInput" placeholder="Type your question..." autocomplete="off">
+                <button id="chatbotSend" aria-label="Send message">➤</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chatbot Styles -->
+    <style>
+        /* Back to Top Button — subtle, kept clear of the right nav rail */
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 96px; /* 80px nav rail + 16px gap, clears the theme toggle */
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: var(--nav-bg);
+            border: 1px solid rgba(154, 161, 171, 0.35);
+            cursor: pointer;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 9998;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-2px);
+            border-color: var(--accent);
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+        }
+
+        .back-to-top i {
+            color: var(--text-secondary);
+            width: 16px;
+            height: 16px;
+            stroke-width: 2;
+            transition: color 0.3s ease;
+        }
+
+        .back-to-top:hover i {
+            color: var(--accent);
+        }
+
+        .back-to-top.visible {
+            display: flex;
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Slide clear of the expanded 220px nav rail (desktop only) */
+        @media (min-width: 769px) {
+            .sidebar-nav.expanded ~ .back-to-top {
+                right: 236px;
+            }
+        }
+
+        /* Chatbot Widget */
+        .chatbot-widget {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            z-index: 9999;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        .chatbot-toggle {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: var(--secondary-bg);
+            border: 1px solid var(--hairline-strong);
+            cursor: pointer;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.28);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .chatbot-toggle .chat-icon,
+        .chatbot-toggle .close-icon {
+            font-size: 28px;
+            color: var(--accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .chatbot-toggle .chat-icon i,
+        .chatbot-toggle .close-icon i {
+            width: 28px;
+            height: 28px;
+        }
+
+        .chatbot-toggle:hover {
+            transform: scale(1.08);
+            border-color: rgba(100, 255, 218, 0.45);
+            box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35);
+        }
+
+        .chatbot-window {
+            display: none;
+            position: absolute;
+            bottom: 80px;
+            left: 0;
+            width: 380px;
+            max-width: calc(100vw - 40px);
+            height: 550px;
+            max-height: calc(100vh - 120px);
+            background: var(--secondary-bg);
+            border-radius: 16px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            border: 1px solid var(--accent);
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .chatbot-window.active {
+            display: flex;
+            animation: slideUp 0.3s ease;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .chatbot-header {
+            background: linear-gradient(135deg, var(--accent) 0%, var(--accent-secondary) 100%);
+            padding: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: var(--primary-bg);
+        }
+
+        .chatbot-avatar .avatar-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 2px solid var(--primary-bg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .chatbot-info h4 {
+            margin: 0;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .chatbot-info .status {
+            margin: 2px 0 0 0;
+            font-size: 12px;
+            opacity: 0.9;
+        }
+
+        .chatbot-minimize {
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: var(--primary-bg);
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            cursor: pointer;
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.2s;
+        }
+
+        .chatbot-minimize i {
+            width: 18px;
+            height: 18px;
+        }
+
+        .chatbot-minimize:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .chatbot-messages {
+            flex: 1;
+            overflow-y: auto;
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .chatbot-messages::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .chatbot-messages::-webkit-scrollbar-track {
+            background: var(--primary-bg);
+        }
+
+        .chatbot-messages::-webkit-scrollbar-thumb {
+            background: var(--accent);
+            border-radius: 3px;
+        }
+
+        .message {
+            max-width: 85%;
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .bot-message {
+            align-self: flex-start;
+        }
+
+        .user-message {
+            align-self: flex-end;
+            margin-left: auto;
+        }
+
+        .message-content {
+            background: var(--primary-bg);
+            padding: 12px 16px;
+            border-radius: 12px;
+            border-bottom-left-radius: 2px;
+            color: var(--text-primary);
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .user-message .message-content {
+            background: linear-gradient(135deg, var(--accent) 0%, var(--accent-secondary) 100%);
+            color: var(--primary-bg);
+            border-radius: 12px;
+            border-bottom-right-radius: 2px;
+        }
+
+        .message-time {
+            font-size: 11px;
+            color: var(--text-secondary);
+            margin-top: 4px;
+            display: block;
+        }
+
+        .quick-questions {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-top: 8px;
+        }
+
+        .quick-question-btn {
+            background: var(--primary-bg);
+            border: 1px solid var(--accent);
+            color: var(--text-primary);
+            padding: 10px 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 13px;
+            text-align: left;
+            transition: all 0.2s ease;
+            font-family: inherit;
+        }
+
+        .quick-question-btn:hover {
+            background: var(--accent);
+            color: var(--primary-bg);
+            transform: translateX(4px);
+        }
+
+        .chatbot-input {
+            display: flex;
+            gap: 8px;
+            padding: 16px;
+            background: var(--primary-bg);
+            border-top: 1px solid var(--accent);
+        }
+
+        .chatbot-input input {
+            flex: 1;
+            background: var(--secondary-bg);
+            border: 1px solid var(--text-secondary);
+            color: var(--text-primary);
+            padding: 12px 16px;
+            border-radius: 24px;
+            outline: none;
+            font-size: 14px;
+            font-family: inherit;
+            transition: border-color 0.2s;
+        }
+
+        .chatbot-input input:focus {
+            border-color: var(--accent);
+        }
+
+        .chatbot-input input::placeholder {
+            color: var(--text-secondary);
+        }
+
+        .chatbot-input button {
+            background: linear-gradient(135deg, var(--accent) 0%, var(--accent-secondary) 100%);
+            border: none;
+            color: var(--primary-bg);
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.2s;
+        }
+
+        .chatbot-input button:hover {
+            transform: scale(1.1);
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 480px) {
+            .back-to-top {
+                width: 34px;
+                height: 34px;
+                bottom: 84px; /* above the bottom nav bar */
+                right: 14px;
+            }
+
+            .back-to-top i {
+                width: 18px;
+                height: 18px;
+            }
+
+            .chatbot-toggle {
+                width: 50px;
+                height: 50px;
+                font-size: 24px;
+                bottom: 90px;
+            }
+
+            .chatbot-window {
+                width: calc(100vw - 20px);
+                left: 10px;
+                bottom: 150px;
+                height: calc(100vh - 170px);
+            }
+
+            .quick-question-btn {
+                padding: 8px 12px;
+                font-size: 12px;
+            }
+        }
+
+        /* Tablet Responsive */
+        @media (min-width: 481px) and (max-width: 768px) {
+            .back-to-top {
+                width: 36px;
+                height: 36px;
+                bottom: 84px; /* above the bottom nav bar */
+                right: 16px;
+            }
+
+            .chatbot-toggle {
+                bottom: 90px;
+            }
+
+            .chatbot-window {
+                bottom: 150px;
+            }
+        }
+
+        /* Light Theme */
+        [data-theme="light"] .chatbot-window {
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        [data-theme="light"] .chatbot-toggle {
+            box-shadow: 0 4px 20px rgba(20, 184, 166, 0.4);
+        }
+    </style>
+
+    <!-- Chatbot Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+    <!-- Cinematic FX engine: GSAP + ScrollTrigger (site falls back to the legacy CSS/observer animations if unavailable) -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script>
+        // Theme Toggle
+        const themeToggle=document.getElementById('themeToggle'),themeIcon=themeToggle.querySelector('.icon'),currentTheme=localStorage.getItem('theme')||'dark';
+        document.documentElement.setAttribute('data-theme',currentTheme),updateThemeButton(currentTheme);
+        themeToggle.addEventListener('click',()=>{const currentTheme=document.documentElement.getAttribute('data-theme'),newTheme='dark'===currentTheme?'light':'dark';document.documentElement.setAttribute('data-theme',newTheme),localStorage.setItem('theme',newTheme),updateThemeButton(newTheme)});
+        function updateThemeButton(theme){themeIcon.textContent='light'===theme?'○':'◑'}
+
+        // Reduced-motion + cinematic FX gate (GSAP via CDN; legacy CSS/observer fallback)
+        const reducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        const FX=!!(window.gsap&&window.ScrollTrigger&&!reducedMotion);
+
+        // No GSAP (CDN failure): disarm the pre-paint intro curtain immediately so
+        // the legacy reveal system takes over with no overlay stuck on screen
+        if(!FX){
+            const legacyCurtain=document.getElementById('introCurtain');
+            if(legacyCurtain)legacyCurtain.remove();
+        }
+
+        // Typing Animation - type once, then rest (full title stays visible)
+        const typingText=document.querySelector('.typing-text-content');
+        const typingCursor=document.querySelector('.typing-cursor');
+        const role='Business Applications Developer';
+        let charIndex=0;
+        const typingSpeed=60;
+
+        function type(){
+            if(charIndex<role.length){
+                typingText.textContent=role.substring(0,charIndex+1);
+                charIndex++;
+                setTimeout(type,typingSpeed);
+            }
+        }
+
+        function startTyping(delay){
+            typingText.textContent='';
+            typingCursor.style.display='inline';
+            setTimeout(type,delay);
+        }
+
+        if(reducedMotion){
+            typingCursor.style.display='none';
+        }else if(!FX){
+            startTyping(500);
+        }
+        // FX path: startTyping() is queued by the hero entrance timeline below
+
+        if(FX){
+            /* ==========================================
+               CINEMATIC FX (GSAP + ScrollTrigger)
+               ========================================== */
+            document.documentElement.classList.add('fx');
+            gsap.registerPlugin(ScrollTrigger);
+
+            // Wrap an element's content in an overflow mask for cinematic rise-ins
+            const maskWrap=(el)=>{
+                let inner=el.querySelector('.mask-inner');
+                if(!inner){
+                    inner=document.createElement('span');
+                    inner.className='mask-inner';
+                    while(el.firstChild)inner.appendChild(el.firstChild);
+                    el.appendChild(inner);
+                }
+                el.classList.add('mask');
+                return inner;
+            };
+
+            // v2 hero: the giant value statement is the lead — per-word masked rise.
+            // The per-letter name drop/run retired with the name's move to byline.
+            const heroStWords=document.querySelectorAll('.hero-statement .wd');
+
+            // Hero entrance — choreographed, starts as the intro curtain wipes away
+            const heroTl=gsap.timeline({defaults:{ease:'power3.out'},paused:true});
+            const ghostTargetOpacity=parseFloat(getComputedStyle(document.querySelector('.ghost-portrait')).opacity)||0.22;
+            heroTl
+                .fromTo('.ghost-portrait',{opacity:0},{opacity:ghostTargetOpacity,duration:1.5,ease:'power2.out',
+                    onComplete:()=>gsap.set('.ghost-portrait',{clearProps:'opacity'})},0)
+                .fromTo('.hero-content .text-64ffda',{y:26,opacity:0},{y:0,opacity:1,duration:0.55},0)
+                .fromTo('.hero-byline',{y:20,opacity:0},{y:0,opacity:1,duration:0.55},0.25)
+                // Giant statement: words rise out of per-word overflow masks
+                .fromTo(heroStWords,{yPercent:120},{yPercent:0,duration:0.95,ease:'power4.out',stagger:0.11},0.45)
+                .add(()=>startTyping(120),0.5)
+                .fromTo('.hero-tagline',{y:24,opacity:0},{y:0,opacity:1,duration:0.6},0.95)
+                .fromTo('.hero-description',{y:24,opacity:0},{y:0,opacity:1,duration:0.6},1.08)
+                .fromTo('.quick-info-bar',{y:24,opacity:0},{y:0,opacity:1,duration:0.6},1.2)
+                .fromTo('.hero-socials .hero-social',{y:18,opacity:0},{y:0,opacity:1,duration:0.5,stagger:0.08},1.32)
+                .fromTo('.hero-buttons-quiet .hero-text-link',{y:14,opacity:0},{y:0,opacity:1,duration:0.5,stagger:0.08},1.48);
+
+            // Intro curtain: monogram + accent line, then a wipe-up reveal
+            const curtain=document.getElementById('introCurtain');
+            if(curtain){
+                gsap.timeline({onComplete:()=>curtain.remove()})
+                    .fromTo('.intro-mark',{y:26,opacity:0},{y:0,opacity:1,duration:0.5,ease:'power3.out'},0.05)
+                    .fromTo('.intro-line',{scaleX:0,opacity:0},{scaleX:1,opacity:1,duration:0.6,ease:'power2.inOut'},0.25)
+                    .to(curtain,{clipPath:'inset(0% 0% 100% 0%)',duration:0.85,ease:'power4.inOut'},0.95)
+                    .to('.intro-mark',{y:-16,opacity:0,duration:0.4,ease:'power1.out'},0.95)
+                    .to('.intro-line',{opacity:0,duration:0.3,ease:'power1.out'},0.95)
+                    .add(()=>heroTl.play(),1.2);
+            }else{
+                heroTl.play();
+            }
+
+            // Section titles & subheadings: masked rise on scroll
+            document.querySelectorAll('.section-title, .section-subheading').forEach((el)=>{
+                const inner=maskWrap(el);
+                gsap.fromTo(inner,{yPercent:115},{yPercent:0,duration:0.95,ease:'power4.out',
+                    scrollTrigger:{trigger:el,start:'top 88%',once:true}});
+            });
+
+            // Generic scroll reveals (GSAP upgrade of the legacy observer system)
+            const revealEls=document.querySelectorAll('.fade-in:not(.section-title), .slide-up, .slide-left, .slide-right, .scale-in');
+            revealEls.forEach((el)=>{
+                if(el.classList.contains('slide-left'))gsap.set(el,{opacity:0,x:-40});
+                else if(el.classList.contains('slide-right'))gsap.set(el,{opacity:0,x:40});
+                else if(el.classList.contains('scale-in'))gsap.set(el,{opacity:0,scale:0.8});
+                else if(el.classList.contains('slide-up'))gsap.set(el,{opacity:0,y:40});
+                else gsap.set(el,{opacity:0,y:20});
+            });
+            ScrollTrigger.batch(revealEls,{start:'top 88%',once:true,
+                onEnter:(batch)=>gsap.to(batch,{opacity:1,x:0,y:0,scale:1,duration:0.9,ease:'power3.out',stagger:0.08,overwrite:true})});
+
+            // Stat counters: 8 / 4 / 1 / 3 count up on first view
+            document.querySelectorAll('.stat-number').forEach((el)=>{
+                const target=parseInt(el.textContent.replace(/[^\d]/g,''),10);
+                if(!isNaN(target)){
+                    const counter={v:0};
+                    gsap.to(counter,{v:target,duration:1.4,ease:'power1.out',
+                        scrollTrigger:{trigger:el,start:'top 88%',once:true},
+                        onUpdate:()=>{el.textContent=Math.round(counter.v)}});
+                }
+            });
+
+            // Hero glow parallax (drives #landing::before via CSS variables)
+            gsap.to('#landing',{'--glow-y':'-140px','--glow-s':1.08,ease:'none',
+                scrollTrigger:{trigger:'#landing',start:'top top',end:'bottom top',scrub:true}});
+
+            // Ghost portrait: slow parallax drift as the hero scrolls out
+            gsap.fromTo('.ghost-portrait',{y:44},{y:-90,ease:'none',
+                scrollTrigger:{trigger:'#landing',start:'top top',end:'bottom top',scrub:true}});
+
+            // ==========================================
+            //   INTERACTIVE ENTICEMENTS (pointer-fine devices)
+            // ==========================================
+            if(window.matchMedia('(pointer: fine)').matches){
+                // Hidden case-code trail: one masked layer follows the cursor
+                const secrets=document.querySelector('.hero-secrets');
+                const landing=document.getElementById('landing');
+                // Magnetic CTAs: gently pull toward a nearby cursor, spring back
+                const magnets=[...document.querySelectorAll('.hero-buttons-quiet .hero-text-link, .why-cta .hero-text-link')].map(el=>({
+                    el,
+                    xTo:gsap.quickTo(el,'x',{duration:0.35,ease:'power3'}),
+                    yTo:gsap.quickTo(el,'y',{duration:0.35,ease:'power3'})
+                }));
+                let px=-1,py=-1,rafId=null;
+                const applyPointer=()=>{
+                    rafId=null;
+                    if(secrets&&landing){
+                        const r=landing.getBoundingClientRect();
+                        if(py>=r.top&&py<=r.bottom&&px>=r.left&&px<=r.right){
+                            secrets.style.setProperty('--sx',(px-r.left)+'px');
+                            secrets.style.setProperty('--sy',(py-r.top)+'px');
+                        }else{
+                            secrets.style.setProperty('--sx','-400px');
+                            secrets.style.setProperty('--sy','-400px');
+                        }
+                    }
+                    magnets.forEach(m=>{
+                        const r=m.el.getBoundingClientRect();
+                        const dx=px-(r.left+r.width/2),dy=py-(r.top+r.height/2);
+                        const radius=Math.max(r.width,90)/2+70;
+                        const pull=v=>Math.max(-8,Math.min(8,v));
+                        if(Math.hypot(dx,dy)<radius){
+                            m.xTo(pull(dx*0.22));
+                            m.yTo(pull(dy*0.22));
+                        }else{
+                            m.xTo(0);
+                            m.yTo(0);
+                        }
+                    });
+                };
+                window.addEventListener('pointermove',(e)=>{
+                    px=e.clientX;py=e.clientY;
+                    if(!rafId)rafId=requestAnimationFrame(applyPointer);
+                },{passive:true});
+
+                // Chatbot nudge: one gentle invite per session, after a short read
+                const NUDGE_DELAY=14000;
+                const bubble=document.createElement('div');
+                bubble.className='chatbot-nudge-bubble';
+                bubble.setAttribute('role','button');
+                bubble.textContent='Need info fast? Ask my assistant';
+                const chatbotToggle=document.getElementById('chatbotToggle');
+                const dismissNudge=()=>{
+                    bubble.remove();
+                    chatbotToggle&&chatbotToggle.classList.remove('nudge');
+                    sessionStorage.setItem('chatNudged','1');
+                };
+                bubble.addEventListener('click',()=>{
+                    chatbotToggle&&chatbotToggle.click();
+                    dismissNudge();
+                });
+                chatbotToggle&&chatbotToggle.addEventListener('click',dismissNudge);
+                setTimeout(()=>{
+                    sessionStorage.setItem('chatNudged','1');
+                    if(document.getElementById('chatbotWindow').classList.contains('active'))return;
+                    chatbotToggle.classList.add('nudge');
+                    document.getElementById('chatbotWidget').appendChild(bubble);
+                    setTimeout(dismissNudge,7000);
+                },NUDGE_DELAY);
+            }
+
+            // ==========================================
+            //   PERSONALITY PASS v2 (FX-gated motion)
+            // ==========================================
+            if(window.matchMedia('(pointer: fine)').matches){
+                // (02) Proof-band window parallax + idle drift (drift is pure CSS)
+                const proofStack=document.getElementById('proofStack');
+                if(proofStack){
+                    const pCards=[...proofStack.querySelectorAll('.app-window')];
+                    const pDepths=[30,18,10];
+                    proofStack.addEventListener('mousemove',function(e){
+                        const r=proofStack.getBoundingClientRect();
+                        const dx=(e.clientX-r.left)/r.width-.5,dy=(e.clientY-r.top)/r.height-.5;
+                        pCards.forEach(function(c,i){
+                            c.style.setProperty('--px',(-dx*pDepths[i]).toFixed(1)+'px');
+                            c.style.setProperty('--py',(-dy*pDepths[i]).toFixed(1)+'px');
+                        });
+                    });
+                    proofStack.addEventListener('mouseleave',function(){
+                        pCards.forEach(function(c){c.style.setProperty('--px','0px');c.style.setProperty('--py','0px')});
+                    });
+                }
+
+                // (09) 3D tilt on project cards — lean toward the cursor, capped 6deg
+                const TILT_MAX=6;
+                document.querySelectorAll('[data-tilt]').forEach(function(card){
+                    card.addEventListener('mousemove',function(e){
+                        const r=card.getBoundingClientRect();
+                        const dx=(e.clientX-r.left)/r.width-.5;
+                        const dy=(e.clientY-r.top)/r.height-.5;
+                        card.classList.add('tilting');
+                        card.style.transform='rotateY('+(dx*TILT_MAX*2).toFixed(2)+'deg) rotateX('+(-dy*TILT_MAX*2).toFixed(2)+'deg)';
+                    });
+                    card.addEventListener('mouseleave',function(){
+                        card.classList.remove('tilting');
+                        card.style.transform='';
+                    });
+                });
+            }
+
+            ScrollTrigger.refresh();
+        }else{
+            // Legacy fallback: original IntersectionObserver reveal system
+            const observerOptions={threshold:.1,rootMargin:'0px 0px -50px 0px'},observer=new IntersectionObserver((entries)=>{entries.forEach(entry=>{if(entry.isIntersecting){const target=entry.target;let delay=0;if(target.classList.contains('stagger-1'))delay=100;else if(target.classList.contains('stagger-2'))delay=200;else if(target.classList.contains('stagger-3'))delay=300;setTimeout(()=>target.classList.add('visible'),delay)}})},observerOptions);
+            document.querySelectorAll('.fade-in,.slide-up,.slide-left,.slide-right,.scale-in').forEach((element)=>{observer.observe(element)});
+        }
+
+        // ==========================================
+        //   PERSONALITY PASS v2 (framework-independent)
+        // ==========================================
+
+        // (10) Scroll progress bar — fades in after the hero, tracks the page
+        const progressFill=document.getElementById('progressFill');
+        const progressPct=document.getElementById('progressPct');
+        const progressBar=document.querySelector('.scroll-progress');
+        if(progressFill&&progressPct&&progressBar){
+            const onProg=()=>{
+                const max=document.documentElement.scrollHeight-window.innerHeight;
+                const p=max>0?Math.min(1,Math.max(0,window.scrollY/max)):0;
+                progressFill.style.width=(p*100).toFixed(1)+'%';
+                progressPct.textContent=Math.round(p*100)+'% READ';
+                const show=window.scrollY>window.innerHeight*0.5;
+                progressBar.classList.toggle('visible',show);
+                progressPct.classList.toggle('visible',show);
+            };
+            document.addEventListener('scroll',onProg,{passive:true});
+            onProg();
+        }
+
+        // (03) Proof-band checkout feed — simulated demo, clearly labeled as such
+        const posFeed=document.getElementById('posFeed');
+        if(posFeed&&!reducedMotion){
+            const feedItems=[['Sardines (large) ×2','₱68'],['Coffee 3-in-1 ×5','₱55'],['Rice 1kg','₱52'],['Load ₱60','₱60'],['Softdrinks ×3','₱90']];
+            const runFeed=()=>{
+                posFeed.innerHTML='';let sum=0;
+                feedItems.forEach(function(it,i){
+                    setTimeout(function(){
+                        const r=document.createElement('div');r.className='feed-row';
+                        r.innerHTML='<b>'+it[0]+'</b><span>'+it[1]+'</span>';
+                        posFeed.appendChild(r);sum+=parseInt(it[1].slice(1),10);
+                    },i*700);
+                });
+                setTimeout(function(){
+                    const total=document.createElement('div');total.className='feed-total';
+                    total.innerHTML='<span>TOTAL</span><b>₱'+sum+'</b>';
+                    const badge=document.createElement('div');badge.className='feed-badge';badge.textContent='✓ SALE RECORDED';
+                    posFeed.appendChild(total);posFeed.appendChild(badge);
+                },feedItems.length*700+250);
+                setTimeout(runFeed,feedItems.length*700+2900);
+            };
+            runFeed();
+        }
+
+        // (08) Pull-quote rotator — auto-rotates, REF codes are the pager, hover pauses
+        const quoteWrap=document.getElementById('quoteQuotes');
+        if(quoteWrap){
+            const qs=[...quoteWrap.querySelectorAll('.q')];
+            const qBtns=[...document.querySelectorAll('.quote-pager button')];
+            let qIdx=0,qTimer=null;
+            const qShow=i=>{qIdx=i;qs.forEach((q,j)=>q.classList.toggle('on',j===i));qBtns.forEach((b,j)=>b.classList.toggle('on',j===i));};
+            const qStop=()=>{if(qTimer){clearInterval(qTimer);qTimer=null}};
+            const qPlay=()=>{qStop();if(!reducedMotion)qTimer=setInterval(()=>qShow((qIdx+1)%qs.length),6500);};
+            qBtns.forEach(b=>b.addEventListener('click',()=>{qShow(parseInt(b.getAttribute('data-i'),10));qPlay();}));
+            const qArea=document.querySelector('.quote-area');
+            if(qArea){qArea.addEventListener('mouseenter',qStop);qArea.addEventListener('mouseleave',qPlay);}
+            qPlay();
+        }
+
+        // (04) Pinned scroll process — vanilla sticky + scroll math; collapses to a
+        // plain stacked list on mobile, reduced-motion, and narrow viewports
+        const pTrack=document.getElementById('processTrack');
+        if(pTrack&&!reducedMotion&&window.matchMedia('(min-width: 900px)').matches){
+            pTrack.classList.add('pin-enabled');
+            const pSteps=[...pTrack.querySelectorAll('.step')];
+            const pNums=[...pTrack.querySelectorAll('.process-gnum span')];
+            const railFillEl=document.getElementById('railFill');
+            let pCur=-1;
+            const pOnScroll=()=>{
+                const r=pTrack.getBoundingClientRect();
+                const total=r.height-window.innerHeight;
+                const p=total>0?Math.min(1,Math.max(0,-r.top/total)):0;
+                if(railFillEl)railFillEl.style.height=(p*100).toFixed(1)+'%';
+                const idx=Math.min(pSteps.length-1,Math.floor(p*pSteps.length));
+                if(idx!==pCur){
+                    pCur=idx;
+                    pSteps.forEach((s,i)=>s.classList.toggle('on',i===idx));
+                    pNums.forEach((n,i)=>n.classList.toggle('on',i===idx));
+                }
+            };
+            document.addEventListener('scroll',pOnScroll,{passive:true});
+            pOnScroll();
+            // The 430vh track shifts every trigger below it — re-measure ScrollTrigger
+            if(window.gsap&&window.ScrollTrigger)ScrollTrigger.refresh();
+        }
+
+        const contactForm=document.getElementById("contact-form"),contactSubmit=document.getElementById("contact-submit"),formSuccess=document.getElementById("form-success"),formError=document.getElementById("form-error");
+        if(contactForm){contactForm.addEventListener("submit",async(event)=>{
+            event.preventDefault();
+            const subjInput=document.getElementById("subject");
+            if(subjInput&&!subjInput.value){const chipBox=document.querySelector(".subject-chips");if(chipBox){chipBox.style.outline="2px solid var(--accent-secondary)";chipBox.style.outlineOffset="4px";setTimeout(()=>{chipBox.style.outline="";chipBox.style.outlineOffset="";},2500);}chipBox&&chipBox.scrollIntoView({block:"center",behavior:"smooth"});return}
+            // A filled honeypot means a bot: silently accept and reset
+            if(contactForm.querySelector('[name="_gotcha"]').value){contactForm.reset();return}
+            const originalHTML=contactSubmit.innerHTML;
+            contactSubmit.disabled=true;
+            contactSubmit.innerHTML='<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Sending…';
+            formSuccess.classList.add("d-none");formError.classList.add("d-none");
+            try{
+                const response=await fetch(contactForm.action,{method:"POST",body:new FormData(contactForm),headers:{Accept:"application/json"}});
+                if(response.ok){
+                    formSuccess.classList.remove("d-none");
+                    contactForm.reset();
+                    setTimeout(()=>formSuccess.classList.add("d-none"),8000);
+                }else{
+                    formError.classList.remove("d-none");
+                }
+            }catch(err){
+                formError.classList.remove("d-none");
+            }finally{
+                contactSubmit.disabled=false;
+                contactSubmit.innerHTML=originalHTML;
+            }
+        })}
+
+        // Dynamic copyright year
+        const yearEl=document.getElementById("copyright-year");
+        if(yearEl)yearEl.textContent=new Date().getFullYear();
+
+        // Projects carousel
+        const projCar=document.getElementById('projectsCarousel');
+        if(projCar){
+            const projPrev=document.getElementById('projectsPrev'),projNext=document.getElementById('projectsNext'),projDots=document.getElementById('projectsDots');
+            const projSlides=[...projCar.querySelectorAll('.project-slide')];
+            const projCount=()=>Math.ceil(projSlides.length/(window.innerWidth>=992?3:1));
+            let projCur=0;
+            const projGo=p=>{projCur=Math.max(0,Math.min(projCount()-1,p));const target=projSlides[Math.min(projCur*(window.innerWidth>=992?3:1),projSlides.length-1)];const left=target.offsetLeft-projSlides[0].offsetLeft;projCar.scrollTo({left,behavior:'smooth'});setTimeout(()=>{if(Math.abs(projCar.scrollLeft-left)>4)projCar.scrollLeft=left;},450);projSync();};
+            const projSync=()=>{[...projDots.children].forEach((d,i)=>d.classList.toggle('active',i===projCur));projPrev.disabled=projCur<=0;projNext.disabled=projCur>=projCount()-1;};
+            const projBuild=()=>{projDots.innerHTML='';for(let i=0;i<projCount();i++){const b=document.createElement('button');b.type='button';b.className='carousel-dot';b.setAttribute('aria-label','Go to projects page '+(i+1));b.addEventListener('click',()=>projGo(i));projDots.appendChild(b);}};
+            projPrev.addEventListener('click',()=>projGo(projCur-1));
+            projNext.addEventListener('click',()=>projGo(projCur+1));
+            let projRt;projCar.addEventListener('scroll',()=>{clearTimeout(projRt);projRt=setTimeout(()=>{projCur=Math.round(projCar.scrollLeft/projCar.clientWidth);projSync();},120);});
+            window.addEventListener('resize',()=>{clearTimeout(projRt);projRt=setTimeout(()=>{projBuild();projSync();},150);});
+            let projAuto;
+            const projStart=()=>{clearInterval(projAuto);projAuto=setInterval(()=>{projGo(projCur>=projCount()-1?0:projCur+1);},5000);};
+            projStart();
+            projCar.addEventListener('mouseenter',()=>clearInterval(projAuto));
+            projCar.addEventListener('mouseleave',projStart);
+            projDots.addEventListener('click',projStart);
+            projPrev.addEventListener('click',projStart);
+            projNext.addEventListener('click',projStart);
+            projBuild();projSync();
+        }
+
+        // Subject chips
+        const subjInput=document.getElementById('subject');
+        if(subjInput){
+            document.querySelectorAll('.subject-chip').forEach(chip=>{
+                chip.addEventListener('click',()=>{
+                    document.querySelectorAll('.subject-chip').forEach(c=>c.classList.remove('selected'));
+                    if(subjInput.value===chip.dataset.value){
+                        subjInput.value='';
+                    }else{
+                        chip.classList.add('selected');
+                        subjInput.value=chip.dataset.value;
+                    }
+                });
+            });
+        }
+
+        // Sidebar Toggle
+        const sidebarNav=document.getElementById('sidebarNav'),sidebarToggle=document.getElementById('sidebarToggle');
+        sidebarToggle.addEventListener('click',()=>{sidebarNav.classList.toggle('expanded');const toggleIcon=sidebarToggle.querySelector('.toggle-icon');sidebarNav.classList.contains('expanded')?toggleIcon.innerHTML='<i class="ti ti-x"></i>':toggleIcon.innerHTML='<i class="ti ti-menu-2"></i>'});
+
+        // ==========================================
+        // BACK TO TOP BUTTON
+        // ==========================================
+
+        const backToTop = document.getElementById('backToTop');
+
+        // Show/hide button based on scroll position
+        window.addEventListener('scroll', function() {
+            // Show button when approaching Skills section
+            const skillsSection = document.getElementById('tools');
+            if (skillsSection) {
+                const skillsPosition = skillsSection.offsetTop;
+                if (window.scrollY > skillsPosition - 200) {
+                    backToTop.classList.add('visible');
+                } else {
+                    backToTop.classList.remove('visible');
+                }
+            }
+        });
+
+        // Smooth scroll to top
+        backToTop.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // ==========================================
+        // AI CHATBOT - FAQ & Knowledge Base
+        // ==========================================
+
+        const chatbotToggle = document.getElementById('chatbotToggle');
+        const chatbotWindow = document.getElementById('chatbotWindow');
+        const chatbotMinimize = document.getElementById('chatbotMinimize');
+        const chatbotInput = document.getElementById('chatbotInput');
+        const chatbotSend = document.getElementById('chatbotSend');
+        const chatbotMessages = document.getElementById('chatbotMessages');
+        const quickQuestions = document.getElementById('quickQuestions');
+
+        // Toggle Chat Window
+        chatbotToggle.addEventListener('click', function() {
+            chatbotWindow.classList.toggle('active');
+            const chatIcon = chatbotToggle.querySelector('.chat-icon');
+            const closeIcon = chatbotToggle.querySelector('.close-icon');
+
+            if (chatbotWindow.classList.contains('active')) {
+                chatIcon.style.display = 'none';
+                closeIcon.style.display = 'block';
+                chatbotInput.focus();
+            } else {
+                chatIcon.style.display = 'flex';
+                closeIcon.style.display = 'none';
+            }
+        });
+
+        // Minimize Chat
+        chatbotMinimize.addEventListener('click', function() {
+            chatbotWindow.classList.remove('active');
+            const chatIcon = chatbotToggle.querySelector('.chat-icon');
+            const closeIcon = chatbotToggle.querySelector('.close-icon');
+            chatIcon.style.display = 'flex';
+            closeIcon.style.display = 'none';
+        });
+
+        // Knowledge Base - Predefined Responses
+        const knowledgeBase = {
+            skills: {
+                keywords: ['skill', 'tech', 'technology', 'stack', 'what do you know', 'what do you use', 'programming', 'coding', 'languages', 'frameworks'],
+                response: `<i class="ti ti-lightbulb"></i> <strong>Technical Skills:</strong><br><br>
+                    <strong>Frontend:</strong> React, Next.js, TypeScript, HTML5, CSS3, JavaScript, Bootstrap<br>
+                    <strong>Backend:</strong> Node.js, Express, MongoDB, Python, Django, Flask, SQLite<br>
+                    <strong>Tools:</strong> Git, REST APIs<br><br>
+                    I build <strong>business applications</strong> — POS systems, digital ledgers, inventory tools, and web applications — with hands-on frontend experience in React and database-driven development!`
+            },
+
+            available: {
+                keywords: ['available', 'hire', 'job', 'work', 'opportunity', 'looking', 'open'],
+                response: `<i class="ti ti-briefcase"></i> <strong>Availability:</strong><br><br>
+                    <i class="ti ti-check"></i> <strong>Yes, I'm actively seeking full-time opportunities!</strong><br><br>
+                    I'm open to:<br>
+                    • Full-time positions<br>
+                    • Remote/Hybrid roles<br>
+                    • Junior developer roles<br>
+                    • Freelance projects<br><br>
+                    Feel free to reach out – I'd love to discuss how I can contribute to your team!`
+            },
+
+            projects: {
+                keywords: ['project', 'portfolio', 'work', 'built', 'created', 'developed', 'showcase', 'app'],
+                response: `<i class="ti ti-rocket"></i> <strong>Featured Projects:</strong><br><br>
+                    <strong>1. Tindahan POS</strong> – Touch-friendly point-of-sale register built for a real sari-sari store, with PIN-protected staff access<br>
+                    <strong>2. Tindahan Ledger</strong> – Daily store checklist with cash counting and customer credit (utang) tracking — second tool shipped for the same store owner<br>
+                    <strong>3. MariClaire Water Delivery Tracker</strong> – Flask + SQLite system with owner, dispatcher, and driver roles for a real water refilling station<br>
+                    <strong>4. Botsi's Meatshop Ledger</strong> – Butcher's ledger tracking each animal from purchase to per-sale profit<br><br>
+                    All are tools built around real business operations. Check out the Projects section for live demos!`
+            },
+
+            contact: {
+                keywords: ['contact', 'email', 'reach', 'connect', 'message', 'get in touch', 'hire'],
+                response: `<i class="ti ti-mail"></i> <strong>Get in Touch:</strong><br><br>
+                    <strong>Email:</strong> jong.codes@gmail.com<br>
+                    <strong>LinkedIn:</strong> linkedin.com/in/mariefil-abawag<br>
+                    <strong>GitHub:</strong> github.com/jongabawag<br><br>
+                    I typically respond within 24 hours. Looking forward to connecting!`
+            },
+
+            experience: {
+                keywords: ['experience', 'background', 'history', 'career', 'years', 'level', 'junior', 'senior'],
+                response: `<i class="ti ti-user"></i> <strong>My Background:</strong><br><br>
+                    I'm a <strong>career-shifter</strong> bringing valuable experience from business management, education, and hospitality into tech.<br><br>
+                    <strong>Technical Training:</strong><br>
+                    • Intensive full-stack bootcamp<br>
+                    • Self-directed learning & projects<br>
+                    • Focus on business applications & web development<br><br>
+                    <strong>What I bring:</strong><br>
+                    • Business acumen & real-world perspective<br>
+                    • Strong communication skills<br>
+                    • Quick learning ability<br>
+                    • Problem-solving mindset`
+            },
+
+            remote: {
+                keywords: ['remote', 'location', 'where', 'relocate', 'office', 'work from', 'hybrid'],
+                response: `<i class="ti ti-world"></i> <strong>Work Preferences:</strong><br><br>
+                    <i class="ti ti-check"></i> <strong>Remote-friendly</strong> – I can work effectively from anywhere<br>
+                    <i class="ti ti-check"></i> <strong>Open to relocation</strong> for the right opportunity<br>
+                    <i class="ti ti-check"></i> <strong>Hybrid work</strong> – Flexible with partial office time<br><br>
+                    I'm comfortable with remote collaboration tools and practices. Distance isn't a barrier!`
+            },
+
+            about: {
+                keywords: ['about', 'who', 'tell me', 'yourself', 'intro', 'introduction'],
+                response: `<i class="ti ti-hand-wave"></i> <strong>Nice to meet you!</strong><br><br>
+                    I'm <strong>Jong Abawag</strong>, a Business Applications Developer who builds practical digital solutions that help businesses run their daily operations better.<br><br>
+                    I've worked on point-of-sale systems, digital ledger platforms, inventory tools, and web applications — approaching every project from a business perspective. New to tech but not new to delivering results – I'm eager to contribute, collaborate, and grow with forward-thinking teams!`
+            },
+
+            default: {
+                response: `<i class="ti ti-help"></i> I didn't quite catch that. Here are some things I can help with:<br><br>
+                    • Skills & Technologies<br>
+                    • Availability for work<br>
+                    • Project information<br>
+                    • Contact details<br>
+                    • Experience background<br><br>
+                    Try asking about any of these, or click one of the quick questions above!`
+            }
+        };
+
+        // Find matching response based on keywords
+        function findResponse(userInput) {
+            const input = userInput.toLowerCase();
+
+            for (const [key, data] of Object.entries(knowledgeBase)) {
+                if (key === 'default') continue;
+
+                for (const keyword of data.keywords) {
+                    if (input.includes(keyword)) {
+                        return data.response;
+                    }
+                }
+            }
+
+            return knowledgeBase.default.response;
+        }
+
+        // Add message to chat
+        function addMessage(content, isUser = false) {
+            // Remove quick questions after first user message
+            if (isUser && quickQuestions) {
+                quickQuestions.style.display = 'none';
+            }
+
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${isUser ? 'user-message' : 'bot-message'}`;
+
+            const messageContent = document.createElement('div');
+            messageContent.className = 'message-content';
+            messageContent.innerHTML = content;
+
+            const messageTime = document.createElement('span');
+            messageTime.className = 'message-time';
+            messageTime.textContent = 'Just now';
+
+            messageDiv.appendChild(messageContent);
+            messageDiv.appendChild(messageTime);
+
+            chatbotMessages.appendChild(messageDiv);
+            chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
+        }
+
+        // Show typing indicator
+        function showTyping() {
+            const typingDiv = document.createElement('div');
+            typingDiv.className = 'message bot-message';
+            typingDiv.id = 'typingIndicator';
+            typingDiv.innerHTML = `
+                <div class="message-content">
+                    <span class="typing-dots">●●●</span>
+                </div>
+            `;
+            chatbotMessages.appendChild(typingDiv);
+            chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
+        }
+
+        // Remove typing indicator
+        function hideTyping() {
+            const typing = document.getElementById('typingIndicator');
+            if (typing) typing.remove();
+        }
+
+        // Handle user message
+        function handleUserMessage(message) {
+            if (!message.trim()) return;
+
+            // Add user message
+            addMessage(message, true);
+
+            // Show typing indicator
+            showTyping();
+
+            // Simulate typing delay and respond
+            setTimeout(() => {
+                hideTyping();
+                const response = findResponse(message);
+                addMessage(response);
+            }, 800);
+        }
+
+        // Send button click
+        chatbotSend.addEventListener('click', function() {
+            handleUserMessage(chatbotInput.value);
+            chatbotInput.value = '';
+        });
+
+        // Enter key to send
+        chatbotInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                handleUserMessage(chatbotInput.value);
+                chatbotInput.value = '';
+            }
+        });
+
+        // Quick question buttons
+        document.querySelectorAll('.quick-question-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const question = this.getAttribute('data-question');
+                const questionText = this.textContent;
+
+                // Find the corresponding response
+                const response = knowledgeBase[question]?.response || knowledgeBase.default.response;
+
+                // Add user message
+                addMessage(questionText, true);
+
+                // Show typing and respond
+                showTyping();
+                setTimeout(() => {
+                    hideTyping();
+                    addMessage(response);
+                }, 800);
+            });
+        });
+    </script>
+</body>
+</html>

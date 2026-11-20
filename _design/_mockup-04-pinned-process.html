@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mockup 04 — Pinned scroll process</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --primary-bg:#0e0f12; --secondary-bg:#181b1f;
+  --text-primary:#e3e6ea; --text-secondary:#9aa1ab;
+  --accent:#64ffda; --accent-secondary:#ff6b6b; --white:#f2f4f7;
+  --mono:'Space Mono',ui-monospace,'Consolas',monospace;
+  --display:'Space Grotesk','Inter',sans-serif;
+  --hairline:rgba(255,255,255,.08); --hairline-strong:rgba(255,255,255,.16);
+  --text-faint:#5c636e;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--primary-bg);color:var(--text-primary);font-family:'Inter',sans-serif;overflow-x:hidden}
+.mockup-tag{position:fixed;top:0;left:0;right:0;z-index:999;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:9px 18px;background:var(--accent-secondary);color:#1a0505;font:700 11px/1 var(--mono);letter-spacing:.09em;text-transform:uppercase}
+.mockup-tag a{color:inherit;text-decoration:none;border-bottom:1px solid currentColor}
+.mock-note{position:fixed;bottom:0;left:0;right:0;z-index:999;padding:9px 18px;background:rgba(24,27,31,.94);border-top:1px solid var(--hairline-strong);font:400 11.5px/1.5 var(--mono);color:var(--text-secondary)}
+.mock-note strong{color:var(--accent);font-weight:700}
+
+.intro{max-width:1100px;margin:0 auto;padding:110px 24px 40px}
+.kicker{display:flex;justify-content:space-between;font:700 12px/1 var(--mono);color:var(--text-faint);letter-spacing:.12em;text-transform:uppercase;border-bottom:1px solid var(--hairline);padding-bottom:12px;margin-bottom:14px}
+.intro h2{font:700 clamp(2.4rem,5vw,4rem)/1.05 var(--display);letter-spacing:-.02em}
+.scroll-hint{font:400 12px/1 var(--mono);color:var(--text-faint);margin-top:16px}
+
+/* pinned track */
+.track{height:430vh;position:relative}
+.stage{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.gnum{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font:700 clamp(14rem,34vw,30rem)/1 var(--display);color:transparent;-webkit-text-stroke:1.5px rgba(255,255,255,.07);user-select:none;letter-spacing:-.04em;z-index:0}
+.gnum span{opacity:0;transition:opacity .45s ease}
+.gnum span.on{opacity:1}
+.steps{position:relative;z-index:1;width:min(560px,86vw);height:300px}
+.step{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;opacity:0;transform:translateY(26px);transition:opacity .5s ease,transform .55s cubic-bezier(.22,1,.36,1);pointer-events:none}
+.step.on{opacity:1;transform:none;pointer-events:auto}
+.step .s-kick{font:700 12px/1 var(--mono);color:var(--accent);letter-spacing:.14em;text-transform:uppercase;margin-bottom:16px}
+.step h3{font:700 clamp(2.6rem,6vw,4.4rem)/1.02 var(--display);letter-spacing:-.02em;margin-bottom:18px}
+.step p{color:var(--text-secondary);font-size:1.08rem;line-height:1.65;max-width:46ch}
+.rail{position:absolute;left:5vw;top:50%;transform:translateY(-50%);height:200px;width:1px;background:var(--hairline-strong);z-index:2}
+.rail i{position:absolute;top:0;left:0;width:100%;background:var(--accent);height:0%}
+.rail-label{position:absolute;left:calc(5vw + 12px);top:50%;transform:translateY(-50%);font:400 11px/1 var(--mono);color:var(--text-faint);writing-mode:vertical-rl;letter-spacing:.2em;z-index:2}
+
+.after{max-width:1100px;margin:0 auto;padding:60px 24px 130px;color:var(--text-faint);font:400 12px/1.8 var(--mono)}
+@media (max-width:760px){.rail,.rail-label{display:none}}
+</style>
+</head>
+<body>
+<div class="mockup-tag"><span>Mockup 04 / 11 — Pinned scroll process</span><a href="_mockup-index.html">← all mockups</a></div>
+
+<div class="intro">
+  <div class="kicker"><span>05 — Process</span><span>Same steps every time</span></div>
+  <h2>How an App Gets Built</h2>
+  <p class="scroll-hint">keep scrolling — the section pins while the steps swap ↓</p>
+</div>
+
+<div class="track" id="track">
+  <div class="stage">
+    <div class="gnum" id="gnum"><span>01</span><span>02</span><span>03</span><span>04</span></div>
+    <div class="rail"><i id="railFill"></i></div>
+    <span class="rail-label">SCROLL</span>
+    <div class="steps">
+      <div class="step on">
+        <span class="s-kick">Step 01</span>
+        <h3>Intake</h3>
+        <p>We walk through your current process on paper — scope agreed before anything gets built.</p>
+      </div>
+      <div class="step">
+        <span class="s-kick">Step 02</span>
+        <h3>Build</h3>
+        <p>Built with AI-assisted tooling — you see working screens early, not a big reveal at the end.</p>
+      </div>
+      <div class="step">
+        <span class="s-kick">Step 03</span>
+        <h3>Deploy</h3>
+        <p>Hosted and secured with staff logins, then tested against your real data before go-live.</p>
+      </div>
+      <div class="step">
+        <span class="s-kick">Step 04</span>
+        <h3>Handover</h3>
+        <p>Staff training plus a plain-language guide you keep — the app is yours to run.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="after">— end of pinned track — real version continues to Contact.</div>
+
+<div class="mock-note"><strong>THE IDEA</strong> — scrollytelling: the viewport pins, a giant outlined 01→04 numeral swaps behind the steps as you scroll. The instant "agency site" move, built on your real process copy. Vanilla sticky + scroll math in the mockup; real site would use the existing GSAP + ScrollTrigger.</div>
+
+<script>
+(function(){
+  var track=document.getElementById('track');
+  var steps=[].slice.call(document.querySelectorAll('.step'));
+  var nums=[].slice.call(document.querySelectorAll('.gnum span'));
+  var fill=document.getElementById('railFill');
+  var cur=-1;
+  function onScroll(){
+    var r=track.getBoundingClientRect();
+    var total=r.height-window.innerHeight;
+    var p=Math.min(1,Math.max(0,-r.top/total));
+    fill.style.height=(p*100).toFixed(1)+'%';
+    var idx=Math.min(3,Math.floor(p*4));
+    if(idx!==cur){
+      cur=idx;
+      steps.forEach(function(s,i){s.classList.toggle('on',i===idx)});
+      nums.forEach(function(n,i){n.classList.toggle('on',i===idx)});
+    }
+  }
+  document.addEventListener('scroll',onScroll,{passive:true});
+  onScroll();
+})();
+</script>
+</body>
+</html>

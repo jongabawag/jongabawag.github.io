@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mockup 11 — Huge footer sign-off</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --primary-bg:#0e0f12; --secondary-bg:#181b1f;
+  --text-primary:#e3e6ea; --text-secondary:#9aa1ab;
+  --accent:#64ffda; --accent-secondary:#ff6b6b; --white:#f2f4f7;
+  --mono:'Space Mono',ui-monospace,'Consolas',monospace;
+  --display:'Space Grotesk','Inter',sans-serif;
+  --hairline:rgba(255,255,255,.08); --hairline-strong:rgba(255,255,255,.16);
+  --text-faint:#5c636e;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--primary-bg);color:var(--text-primary);font-family:'Inter',sans-serif;overflow-x:hidden}
+.mockup-tag{position:fixed;top:0;left:0;right:0;z-index:999;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:9px 18px;background:var(--accent-secondary);color:#1a0505;font:700 11px/1 var(--mono);letter-spacing:.09em;text-transform:uppercase}
+.mockup-tag a{color:inherit;text-decoration:none;border-bottom:1px solid currentColor}
+.mock-note{position:fixed;bottom:0;left:0;right:0;z-index:999;padding:9px 18px;background:rgba(24,27,31,.94);border-top:1px solid var(--hairline-strong);font:400 11.5px/1.5 var(--mono);color:var(--text-secondary)}
+.mock-note strong{color:var(--accent);font-weight:700}
+
+.stub{max-width:1100px;margin:0 auto;padding:110px 24px 20px;color:var(--text-faint);font:400 12px/1.8 var(--mono)}
+
+.signoff{padding:60px 7vw 90px;border-top:1px solid var(--hairline);margin-top:50px}
+.signoff .kicker{display:flex;justify-content:space-between;font:700 12px/1 var(--mono);color:var(--text-faint);letter-spacing:.12em;text-transform:uppercase;border-bottom:1px solid var(--hairline);padding-bottom:12px;margin-bottom:44px;max-width:1100px}
+.giant{font:700 clamp(3rem,8.5vw,7rem)/1.04 var(--display);letter-spacing:-.03em;max-width:12ch;cursor:default}
+.giant .wd{display:inline-block;transition:transform .45s cubic-bezier(.22,1,.36,1),color .45s ease}
+.giant:hover .wd{transform:translateY(-10px)}
+.giant:hover .wd:nth-child(2){transition-delay:.06s}
+.giant:hover .wd:nth-child(3){transition-delay:.12s}
+.giant:hover .wd:nth-child(4){transition-delay:.18s}
+.giant .period{display:inline-block;color:var(--accent-secondary);transition:transform .45s cubic-bezier(.34,1.6,.64,1)}
+.giant:hover .period{transform:scale(1.5) rotate(12deg)}
+.signoff-row{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:26px;margin-top:52px;max-width:1100px}
+.cta-line{display:flex;gap:30px;flex-wrap:wrap}
+.text-link{color:var(--accent);text-decoration:none;font:600 1.05rem var(--display)}
+.text-link:hover i{transform:translateX(5px)}
+.text-link i{font-style:normal;display:inline-block;transition:transform .25s ease;margin-left:6px}
+.mono-contact{font:400 12px/1.9 var(--mono);color:var(--text-secondary);text-align:right}
+.mono-contact a{color:var(--text-secondary);text-decoration:none;border-bottom:1px solid var(--hairline-strong)}
+.mono-contact a:hover{color:var(--accent);border-color:var(--accent)}
+
+/* existing footer strip — unchanged, for scale */
+.footer{border-top:1px solid var(--hairline);padding:20px 7vw;display:flex;flex-direction:column;gap:14px;background:var(--secondary-bg)}
+.footer-main{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px}
+.footer-logo{font:700 1.05rem var(--display);color:var(--text-primary);text-decoration:none}
+.footer-logo span{color:var(--accent)}
+.footer-links{display:flex;gap:18px}
+.footer-links a{font:400 12px/1 var(--mono);color:var(--text-secondary);text-decoration:none}
+.footer-links a:hover{color:var(--accent)}
+.footer-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;border-top:1px solid var(--hairline);padding-top:14px}
+.footer-bottom p{font:400 11px/1.5 var(--mono);color:var(--text-faint)}
+.ops-dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--live-green,#34d399);box-shadow:0 0 8px rgba(52,211,153,.7);margin-right:6px}
+</style>
+</head>
+<body>
+<div class="mockup-tag"><span>Mockup 11 / 11 — Huge footer sign-off</span><a href="_mockup-index.html">← all mockups</a></div>
+
+<div class="stub">…contact section ends above…</div>
+
+<section class="signoff">
+  <div class="kicker"><span>06 — Contact</span><span>I reply within a day</span></div>
+  <h2 class="giant"><span class="wd">Let's</span> <span class="wd">build</span> <span class="wd">yours<span class="period">.</span></span></h2>
+  <div class="signoff-row">
+    <div class="cta-line">
+      <a class="text-link" href="#">Start the conversation<i>→</i></a>
+      <a class="text-link" href="#">See the work first<i>→</i></a>
+    </div>
+    <div class="mono-contact">
+      <a href="mailto:jong.codes@gmail.com">jong.codes@gmail.com</a><br>
+      jongabawag.github.io · linkedin.com/in/mariefil-abawag
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-main">
+    <a href="#" class="footer-logo">jong<span>.codes</span></a>
+    <nav class="footer-links"><a href="#">Work</a><a href="#">Training</a><a href="#">Testimonials</a><a href="#">Contact</a></nav>
+  </div>
+  <div class="footer-bottom">
+    <p><span class="ops-dot"></span>All systems operational · AI-assisted, human-tested</p>
+    <p>Designed &amp; built by Jong Abawag · © 2026 All rights reserved.</p>
+  </div>
+</footer>
+
+<div class="mock-note"><strong>THE IDEA</strong> — the page ends on a closing pitch, not a form: "Let's build yours." at up to 7rem (hover the words — they lift in sequence, the period springs). Your existing compact footer strip stays exactly as-is underneath. Quiet links carry the conversion; the giant line carries the memory.</div>
+</body>
+</html>

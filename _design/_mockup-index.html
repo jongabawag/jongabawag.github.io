@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Personality Pass — 11 mockups (nothing implemented)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --primary-bg:#0e0f12; --secondary-bg:#181b1f;
+  --text-primary:#e3e6ea; --text-secondary:#9aa1ab;
+  --accent:#64ffda; --accent-secondary:#ff6b6b; --white:#f2f4f7;
+  --mono:'Space Mono',ui-monospace,'Consolas',monospace;
+  --display:'Space Grotesk','Inter',sans-serif;
+  --hairline:rgba(255,255,255,.08); --hairline-strong:rgba(255,255,255,.16);
+  --text-faint:#5c636e;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--primary-bg);color:var(--text-primary);font-family:'Inter',sans-serif}
+.page{max-width:1000px;margin:0 auto;padding:80px 24px 90px}
+.kicker{display:flex;justify-content:space-between;font:700 12px/1 var(--mono);color:var(--text-faint);letter-spacing:.12em;text-transform:uppercase;border-bottom:1px solid var(--hairline);padding-bottom:12px;margin-bottom:16px}
+h1{font:700 clamp(2.4rem,5.5vw,4rem)/1.05 var(--display);letter-spacing:-.02em;margin-bottom:14px}
+.lede{color:var(--text-secondary);max-width:62ch;line-height:1.7;margin-bottom:44px}
+.lede b{color:var(--accent);font-weight:600}
+.lede .no{color:var(--accent-secondary)}
+.group-label{font:700 11px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--text-faint);margin:38px 0 14px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+a.card{display:block;background:var(--secondary-bg);border:1px solid var(--hairline);border-radius:10px;padding:20px 22px;text-decoration:none;color:var(--text-primary);transition:border-color .25s ease,transform .25s ease}
+a.card:hover{border-color:var(--accent);transform:translateY(-3px)}
+.card .idx{font:700 11px/1 var(--mono);color:var(--accent);letter-spacing:.12em;display:block;margin-bottom:10px}
+.card .nm{display:block;font:700 1.15rem/1.3 var(--display);margin-bottom:8px}
+.card .ds{display:block;color:var(--text-secondary);font-size:.88rem;line-height:1.55}
+.card .tier{display:inline-block;margin-top:12px;font:700 9.5px/1 var(--mono);letter-spacing:.12em;border-radius:99px;padding:5px 10px}
+.tier.big{color:var(--accent);border:1px solid rgba(100,255,218,.4)}
+.tier.quick{color:var(--accent-secondary);border:1px solid rgba(255,107,107,.4)}
+.interact{color:var(--text-faint);font:400 11px/1 var(--mono);margin-top:10px;display:block}
+@media (max-width:760px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="kicker"><span>Personality Pass</span><span>review copy — nothing shipped</span></div>
+  <h1>11 mockups. React, then say go.</h1>
+  <p class="lede">Each mockup is a standalone page using your real theme, fonts, and copy. <b>Nothing</b> in <span class="no">index.html</span> or <span class="no">portfolio.css</span> has been touched. Tell me which numbers to implement — or what to tweak first. Interactive ones say <b>move your cursor</b> or <b>scroll</b>.</p>
+
+  <p class="group-label">Big moves</p>
+  <div class="grid">
+    <a class="card" href="_mockup-01-hero-statement.html"><span class="idx">01</span><span class="nm">Giant hero statement</span><span class="ds">"I build apps that run real businesses." becomes the biggest element in the hero; name drops to a byline. Staggered rise on load.</span></a>
+    <a class="card" href="_mockup-02-app-screenshots.html"><span class="idx">02</span><span class="nm">App screenshots as imagery</span><span class="ds">Floating browser windows of your real apps — mouse parallax + idle drift. Proof instead of decoration.</span><span class="interact">→ move your cursor over the stack</span></a>
+    <a class="card" href="_mockup-03-video-loops.html"><span class="idx">03</span><span class="nm">Screen-recording loops</span><span class="ds">Project cards play looping "recordings" of the apps working. Mockup fakes it; shipped version = real footage.</span><span class="interact">→ loops run automatically</span></a>
+    <a class="card" href="_mockup-04-pinned-process.html"><span class="idx">04</span><span class="nm">Pinned scroll process</span><span class="ds">"How an App Gets Built" pins fullscreen; giant outlined 01→04 swaps behind the steps as you scroll.</span><span class="interact">→ scroll through the pinned section</span></a>
+    <a class="card" href="_mockup-05-color-bands.html"><span class="idx">05</span><span class="nm">Full-bleed color bands</span><span class="ds">Sections become alternating full-bleed blocks — dark / teal-tinted / coral-tinted — with giant masked titles.</span><span class="interact">→ scroll; hover the last big title</span></a>
+    <a class="card" href="_mockup-06-stat-band.html"><span class="idx">06</span><span class="nm">Massive stat band</span><span class="ds">Outcome report at ~7.6rem in a ruled receipt band. Same verifiable 8/4/1/3, counting up on entry.</span><span class="interact">→ scroll; numbers count up</span></a>
+    <a class="card" href="_mockup-07-marquee-band.html"><span class="idx">07</span><span class="nm">Honesty marquee band</span><span class="ds">Two infinite marquees between sections — true facts only ("AI-assisted · human-tested"). Hover pauses.</span><span class="interact">→ already moving; hover to pause</span></a>
+  </div>
+
+  <p class="group-label">Quick wins</p>
+  <div class="grid">
+    <a class="card" href="_mockup-08-pull-quotes.html"><span class="idx">08</span><span class="nm">Oversized pull quotes</span><span class="ds">Testimonials at ~2.9rem with a giant coral quote mark, auto-rotating; REF codes become the pager.</span><span class="interact">→ auto-rotates; click the REF codes</span></a>
+    <a class="card" href="_mockup-09-card-tilt.html"><span class="idx">09</span><span class="nm">3D tilt on project cards</span><span class="ds">Cards lean toward the cursor with layered depth; row-highlight hover stays.</span><span class="interact">→ move your cursor across the cards</span></a>
+    <a class="card" href="_mockup-10-progress-bar.html"><span class="idx">10</span><span class="nm">Scroll progress bar</span><span class="ds">The old accidental loading bar becomes deliberate: teal→coral line + "% read" readout.</span><span class="interact">→ scroll the page</span></a>
+    <a class="card" href="_mockup-11-footer-signoff.html"><span class="idx">11</span><span class="nm">Huge footer sign-off</span><span class="ds">Page ends on "Let's build yours." at up to 7rem; words lift in sequence on hover. Footer strip unchanged.</span><span class="interact">→ hover the giant line</span></a>
+  </div>
+</div>
+</body>
+</html>
