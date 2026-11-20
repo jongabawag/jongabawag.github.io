@@ -634,13 +634,22 @@
 
     <!-- Why Hire Me Section -->
     <section id="why" class="container py-5 section-enhanced band-teal-tint">
-        <!-- Ghost portrait: moved from the hero (v2) — atmosphere behind the evidence -->
-        <div class="ghost-portrait" aria-hidden="true"></div>
         <div class="section-kicker fade-in">
             <span class="kicker-idx">03 — Why Me</span>
             <span class="kicker-ref">The short version</span>
         </div>
         <h2 class="section-title fade-in">Why Work With Me</h2>
+        <!-- v2: portrait as a real element — left column, content flows to the right -->
+        <div class="why-split">
+            <figure class="why-portrait slide-left">
+                <div class="chrome-bar" aria-hidden="true">
+                    <span class="chrome-dots"><i></i><i></i><i></i></span>
+                    <span class="chrome-title">profile — jong abawag</span>
+                    <span class="chrome-status pulse">Available</span>
+                </div>
+                <img src="./images/profile.jpg?v=2" alt="Jong Abawag — Business Applications Developer">
+            </figure>
+            <div class="why-body">
         <div class="why-intro slide-up">
             <p>
                 I build practical business applications — point-of-sale systems, digital ledger platforms,
@@ -713,6 +722,8 @@
         </div>
         <div class="why-cta">
             <a href="#contact" class="hero-text-link"><i class="ti ti-arrow-right"></i>Start the conversation</a>
+        </div>
+            </div>
         </div>
     </section>
 
@@ -1499,17 +1510,8 @@
             gsap.to('#landing',{'--glow-y':'-140px','--glow-s':1.08,ease:'none',
                 scrollTrigger:{trigger:'#landing',start:'top top',end:'bottom top',scrub:true}});
 
-            // Ghost portrait (behind Why Work With Me): fades in on approach,
-            // slow parallax drift as the section scrolls through
-            const ghostEl=document.querySelector('.ghost-portrait');
-            if(ghostEl){
-                const ghostTargetOpacity=parseFloat(getComputedStyle(ghostEl).opacity)||0.35;
-                gsap.fromTo(ghostEl,{opacity:0},{opacity:ghostTargetOpacity,duration:1.2,ease:'power2.out',
-                    scrollTrigger:{trigger:'#why',start:'top 70%',once:true},
-                    onComplete:()=>gsap.set(ghostEl,{clearProps:'opacity'})});
-                gsap.fromTo(ghostEl,{y:44},{y:-90,ease:'none',
-                    scrollTrigger:{trigger:'#why',start:'top bottom',end:'bottom top',scrub:true}});
-            }
+            // (ghost-portrait backdrop retired — the portrait is now a real
+            //  element in the Why Work With Me split, revealed by the batch)
 
             // ==========================================
             //   INTERACTIVE ENTICEMENTS (pointer-fine devices)

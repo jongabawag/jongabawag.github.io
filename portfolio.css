@@ -280,11 +280,9 @@ a:hover {
   letter-spacing: 0.01em;
 }
 
-/* Why Hire Me intro copy (positioning statement) */
+/* Why Hire Me intro copy (positioning statement) — left-aligned inside the split column */
 .why-intro {
-  max-width: 680px;
-  margin: 0 auto 2.5rem;
-  text-align: center;
+  margin: 0 0 2rem;
   font-size: 1.05rem;
   color: var(--text-secondary);
   line-height: 1.7;
@@ -676,37 +674,48 @@ li {
   z-index: 1;
 }
 
-/* Ghost portrait — oversized, faded duotone backdrop. Lives behind the
-   "Why Work With Me" evidence section (moved from the hero in v2).
-   Dissolves into the band tint via a radial mask. Faded in and parallaxed
-   by GSAP when the FX layer is active; fully static otherwise. Hidden on
-   small screens for text legibility. */
-.ghost-portrait {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: min(42vw, 580px);
-  height: min(72vh, 640px);
-  background-image: url("./images/profile.jpg?v=2");
-  background-size: cover;
-  background-position: center top;
-  filter: brightness(1.16) contrast(1.06);
-  opacity: 0.35;
-  -webkit-mask-image: radial-gradient(ellipse 64% 60% at 52% 46%, #000 42%, transparent 72%);
-  mask-image: radial-gradient(ellipse 64% 60% at 52% 46%, #000 42%, transparent 72%);
-  pointer-events: none;
-  z-index: -1;
-  will-change: transform;
+/* Why-split portrait (v2) — the photo is a real element now: left column of
+   the Why Work With Me split, framed as an app window. Sticky on desktop so
+   it stays alongside the evidence while the column scrolls. */
+.why-split {
+  display: grid;
+  grid-template-columns: minmax(280px, 380px) 1fr;
+  gap: 2.5rem;
+  align-items: start;
+  margin-top: 2.5rem;
 }
 
-[data-theme="light"] .ghost-portrait {
-  filter: brightness(1.02) contrast(1.08);
-  opacity: 0.45;
+.why-portrait {
+  position: sticky;
+  top: 96px;
+  margin: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--hairline-strong);
+  background: var(--secondary-bg);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
 }
 
-@media (max-width: 768px) {
-  .ghost-portrait {
-    display: none;
+.why-portrait img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+[data-theme="light"] .why-portrait {
+  box-shadow: 0 20px 50px rgba(17, 24, 39, 0.15);
+}
+
+@media (max-width: 991.98px) {
+  .why-split {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .why-portrait {
+    position: static;
+    max-width: 380px;
+    margin: 0 auto;
   }
 }
 
@@ -3826,14 +3835,9 @@ html.fx-armed #introCurtain {
   .mq-track { animation: none; }
 }
 
-/* --- 05 band tint (Why Me section lift; also clips the ghost portrait) ---
-   isolation: the portrait's z-index:-1 must paint ABOVE this section's
-   background but BELOW its content — that needs the section to establish
-   a stacking context (the hero had one via z-index:1; this one didn't,
-   so the portrait sank behind the opaque band background) */
+/* --- 05 band tint (Why Me section lift) --- */
 .band-teal-tint {
   position: relative;
-  overflow: hidden;
   isolation: isolate;
   background:
     radial-gradient(1100px 600px at 15% 20%, rgba(100, 255, 218, 0.07), transparent 65%),
@@ -4066,12 +4070,13 @@ html.fx-armed #introCurtain {
   padding: 0;
 }
 
+/* Single centered cell: all four numerals stack in place and cross-fade —
+   a flex row here overflows the container and pushes 01/04 outside the clip */
 .process-track.pin-enabled .process-gnum {
-  display: flex;
+  display: grid;
+  place-items: center;
   position: absolute;
   inset: 0;
-  align-items: center;
-  justify-content: center;
   font-family: 'Space Grotesk', 'Inter', sans-serif;
   font-weight: 700;
   font-size: clamp(13rem, 32vw, 28rem);
