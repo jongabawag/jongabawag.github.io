@@ -684,7 +684,7 @@ li {
 .ghost-portrait {
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
   width: min(42vw, 580px);
   height: min(72vh, 640px);
   background-image: url("./images/profile.jpg?v=2");
@@ -3836,7 +3836,7 @@ html.fx-armed #introCurtain {
   overflow: hidden;
   isolation: isolate;
   background:
-    radial-gradient(1100px 600px at 85% 20%, rgba(100, 255, 218, 0.07), transparent 65%),
+    radial-gradient(1100px 600px at 15% 20%, rgba(100, 255, 218, 0.07), transparent 65%),
     var(--primary-bg);
 }
 
@@ -4245,7 +4245,7 @@ html.fx-armed #introCurtain {
 
 [data-theme="light"] .band-teal-tint {
   background:
-    radial-gradient(1100px 600px at 85% 20%, rgba(13, 148, 136, 0.06), transparent 65%),
+    radial-gradient(1100px 600px at 15% 20%, rgba(13, 148, 136, 0.06), transparent 65%),
     var(--primary-bg);
 }
 
