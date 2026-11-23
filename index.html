@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jong Abawag | Business Applications Developer | Available for Hire</title>
-    <meta name="description" content="Business Applications Developer building practical digital solutions — point-of-sale systems, digital ledgers, inventory tools, and web applications — that streamline business operations. Currently available for full-time opportunities.">
+    <meta name="description" content="Business Applications Developer building practical digital applications that help businesses improve daily operations, organize information, and streamline workflows. Currently available for full-time opportunities.">
     <meta name="keywords" content="Business Applications Developer, Business Systems, React Developer, Web Application Developer, Point-of-Sale Systems, Inventory Systems, Workflow Automation, API Integrations, JavaScript Developer, Available for Hire, Remote Developer">
     <meta name="author" content="Jong Abawag">
 
@@ -31,13 +31,13 @@
 
     <!-- Preload Critical Resources -->
     <link rel="preload" href="./images/profile.jpg?v=2" as="image">
-    <link rel="preload" href="./portfolio.css?v=55" as="style">
+    <link rel="preload" href="./portfolio.css?v=57" as="style">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Enhanced Custom CSS -->
-    <link rel="stylesheet" type="text/css" href="./portfolio.css?v=55">
+    <link rel="stylesheet" type="text/css" href="./portfolio.css?v=57">
 
     <!-- Cinematic FX: arm the intro curtain before first paint (skipped for reduced-motion users) -->
     <script>
@@ -56,7 +56,7 @@
       "@type": "Person",
       "name": "Jong Abawag",
       "jobTitle": "Business Applications Developer",
-      "description": "Business Applications Developer building practical digital applications — point-of-sale systems, digital ledgers, inventory tools, and web applications — that streamline business operations",
+      "description": "Business Applications Developer building practical digital applications that help businesses improve daily operations, organize information, and streamline workflows",
       "url": "https://jongabawag.github.io/",
       "image": "https://jongabawag.github.io/images/profile.jpg",
       "sameAs": [
@@ -173,9 +173,9 @@
                         </p>
 
                         <p class="hero-description mb-4">
-                            I develop practical digital applications and technology solutions that help businesses
-                            improve their daily operations, organize information, and streamline workflows —
-                            from point-of-sale systems and digital ledgers to web applications.
+                            Running daily operations for years taught me where small businesses lose time —
+                            so I build the registers, ledgers, and trackers that give those hours back,
+                            from checkout to end-of-day reports.
                         </p>
 
                         <!-- Quick Info Bar -->
@@ -194,23 +194,21 @@
                             </div>
                         </div>
 
-                        <div class="hero-socials mb-4">
+                        <div class="hero-buttons hero-buttons-quiet mb-4">
                             <a href="mailto:jong.codes@gmail.com" class="hero-social" aria-label="Email"><i class="ti ti-mail"></i><span>Email</span></a>
                             <a href="https://linkedin.com/in/mariefil-abawag" target="_blank" rel="noopener" class="hero-social" aria-label="LinkedIn"><i class="ti ti-brand-linkedin"></i><span>LinkedIn</span></a>
                             <a href="https://github.com/jongabawag" target="_blank" rel="noopener" class="hero-social" aria-label="GitHub"><i class="ti ti-brand-github"></i><span>GitHub</span></a>
-                        </div>
-
-                        <div class="hero-buttons hero-buttons-quiet">
-                            <a href="#contact" class="hero-text-link"><i class="ti ti-rocket"></i> Hire Me</a>
-                            <a href="#projects" class="hero-text-link"><i class="ti ti-eye"></i> View My Work</a>
-                            <!-- Résumé link commented out until resume.pdf exists in the project root (currently 404s) -->
-                            <!-- <a href="./resume.pdf" target="_blank" rel="noopener" class="hero-text-link"><i class="ti ti-file-download"></i> Résumé</a> -->
+                            <div class="hero-cta-group">
+                                <a href="#contact" class="hero-text-link"><i class="ti ti-rocket"></i> Hire Me</a>
+                                <a href="#projects" class="hero-text-link"><i class="ti ti-eye"></i> View My Work</a>
+                                <a href="./resume.pdf" target="_blank" rel="noopener" class="hero-text-link"><i class="ti ti-file-download"></i> Résumé</a>
+                            </div>
                         </div>
 
                         <!-- Ops status echo: one factual line, status-page style -->
                         <div class="hero-ops slide-up">
-                            <span class="ops-item"><i class="ops-dot" aria-hidden="true"></i>1 app live in production</span>
-                            <span class="ops-item"><i class="ops-ring" aria-hidden="true"></i>3 demos online</span>
+                            <span class="ops-item"><i class="ops-dot" aria-hidden="true"></i>2 apps live in production</span>
+                            <span class="ops-item"><i class="ops-ring" aria-hidden="true"></i>4 demos online</span>
                             <span class="ops-item"><i class="ops-dash" aria-hidden="true"></i>2 builds in progress</span>
                         </div>
                     </div>
@@ -295,6 +293,7 @@
                                 <strong>Solution:</strong> Touch-friendly point-of-sale register with PIN-protected staff access and a guided checkout flow.<br>
                                 <strong>Impact:</strong> Real client work — built for a local store owner and deployed as a live demo.
                             </p>
+                            <button class="case-toggle" type="button" aria-expanded="false"><span class="case-toggle-label">Read the case</span><i class="ti ti-chevron-down" aria-hidden="true"></i></button>
                             <div class="project-tags">
                                 <span class="project-tag coral-tag">JavaScript</span>
                                 <span class="project-tag">Mobile-first</span>
@@ -325,6 +324,7 @@
                                 <strong>Solution:</strong> Mobile-first daily checklist with cash counting, customer credit tracking, and PIN-protected owner/staff access.<br>
                                 <strong>Impact:</strong> Second tool shipped for the same store owner — simple enough for non-technical daily use.
                             </p>
+                            <button class="case-toggle" type="button" aria-expanded="false"><span class="case-toggle-label">Read the case</span><i class="ti ti-chevron-down" aria-hidden="true"></i></button>
                             <div class="project-tags">
                                 <span class="project-tag coral-tag">JavaScript</span>
                                 <span class="project-tag">Mobile-first</span>
@@ -355,6 +355,7 @@
                                 <strong>Solution:</strong> Flask + SQLite tracker with owner, dispatcher, and driver roles — delivery trips, customer balances, inventory, settlements, and daily reports.<br>
                                 <strong>Impact:</strong> Multi-role operations for a real water station — each driver sees only their trips, the owner sees every peso.
                             </p>
+                            <button class="case-toggle" type="button" aria-expanded="false"><span class="case-toggle-label">Read the case</span><i class="ti ti-chevron-down" aria-hidden="true"></i></button>
                             <div class="project-tags">
                                 <span class="project-tag coral-tag">Python</span>
                                 <span class="project-tag">Flask</span>
@@ -385,6 +386,7 @@
                                 <strong>Solution:</strong> Butcher's ledger that follows each animal from purchase (ihaw) to dressed cuts, with stock movements, cashier accounts, and per-sale profit reports.<br>
                                 <strong>Impact:</strong> Every animal's real cost per kilo and every sale's profit, computed automatically — staff see sales only, owners see costs.
                             </p>
+                            <button class="case-toggle" type="button" aria-expanded="false"><span class="case-toggle-label">Read the case</span><i class="ti ti-chevron-down" aria-hidden="true"></i></button>
                             <div class="project-tags">
                                 <span class="project-tag coral-tag">JavaScript</span>
                                 <span class="project-tag">Role-based</span>
@@ -507,7 +509,7 @@
     </section>
 
     <!-- Honesty marquee 1: true facts only (v2) -->
-    <div class="honesty-marquee mq-teal" style="--speed:30s" aria-hidden="true">
+    <div class="honesty-marquee mq-teal" style="--speed:30s;--dir:reverse" aria-hidden="true">
         <div class="mq-track">
             <span class="mq-item">SHIPPED <span class="star">✦</span> IN USE DAILY <span class="star">✦</span> 1 APP LIVE IN PRODUCTION <span class="star">✦</span> 4 TOOLS FOR REAL BUSINESSES <span class="star">✦</span></span>
             <span class="mq-item">SHIPPED <span class="star">✦</span> IN USE DAILY <span class="star">✦</span> 1 APP LIVE IN PRODUCTION <span class="star">✦</span> 4 TOOLS FOR REAL BUSINESSES <span class="star">✦</span></span>
@@ -517,9 +519,13 @@
     <!-- Skills Section -->
     <section id="tools" class="section-enhanced">
         <div class="container">
-            <h2 class="section-title fade-in">Skills & Tools</h2>
+            <div class="section-kicker fade-in">
+                <span class="kicker-idx">02 — Stack</span>
+                <span class="kicker-ref">Daily drivers on every build</span>
+            </div>
+            <h2 class="section-title fade-in">Skills &amp; Tools</h2>
             <p class="section-subheading">
-                Technologies and tools I use to bring ideas to life
+                What the four case files are built with — grouped by the job each part does
             </p>
         </div>
         <div class="skills-strip fade-in" aria-label="Technologies and tools I use">
@@ -586,12 +592,53 @@
                 </div>
             </div>
         </div>
+
+        <!-- Skills ledger: the same stack, grouped by the job it does (mirrors the résumé) -->
+        <div class="container">
+            <div class="skills-ledger fade-in">
+                <div class="skills-ledger-row">
+                    <span class="skills-ledger-label">Languages</span>
+                    <div class="skills-ledger-chips">
+                        <span class="skill-chip"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></span>
+                        <span class="skill-chip"><i class="devicon-typescript-plain colored"></i><span>TypeScript</span></span>
+                        <span class="skill-chip"><i class="devicon-python-plain colored"></i><span>Python</span></span>
+                    </div>
+                </div>
+                <div class="skills-ledger-row">
+                    <span class="skills-ledger-label">Frontend</span>
+                    <div class="skills-ledger-chips">
+                        <span class="skill-chip"><i class="devicon-react-original colored"></i><span>React</span></span>
+                        <span class="skill-chip"><i class="devicon-nextjs-plain colored"></i><span>Next.js</span></span>
+                        <span class="skill-chip"><i class="devicon-html5-plain colored"></i><span>HTML5</span></span>
+                        <span class="skill-chip"><i class="devicon-css3-plain colored"></i><span>CSS3</span></span>
+                        <span class="skill-chip"><i class="devicon-bootstrap-plain colored"></i><span>Bootstrap</span></span>
+                    </div>
+                </div>
+                <div class="skills-ledger-row">
+                    <span class="skills-ledger-label">Backend</span>
+                    <div class="skills-ledger-chips">
+                        <span class="skill-chip"><i class="devicon-nodejs-plain colored"></i><span>Node.js</span></span>
+                        <span class="skill-chip"><i class="devicon-express-original colored"></i><span>Express</span></span>
+                        <span class="skill-chip"><i class="devicon-flask-original colored"></i><span>Flask</span></span>
+                        <span class="skill-chip"><i class="devicon-django-plain colored"></i><span>Django</span></span>
+                    </div>
+                </div>
+                <div class="skills-ledger-row">
+                    <span class="skills-ledger-label">Data &amp; Tools</span>
+                    <div class="skills-ledger-chips">
+                        <span class="skill-chip"><i class="devicon-mongodb-plain colored"></i><span>MongoDB</span></span>
+                        <span class="skill-chip"><i class="devicon-sqlite-plain colored"></i><span>SQLite</span></span>
+                        <span class="skill-chip"><i class="devicon-git-plain colored"></i><span>Git</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Certifications Section -->
     <section id="certifications" class="container py-5 section-enhanced">
         <div class="section-kicker fade-in">
-            <span class="kicker-idx">02 — Training</span>
+            <span class="kicker-idx">03 — Training</span>
             <span class="kicker-ref">Bootcamp &amp; short courses</span>
         </div>
         <h2 class="section-title fade-in">Where I Trained</h2>
@@ -635,7 +682,7 @@
     <!-- Why Hire Me Section -->
     <section id="why" class="container py-5 section-enhanced band-teal-tint">
         <div class="section-kicker fade-in">
-            <span class="kicker-idx">03 — Why Me</span>
+                <span class="kicker-idx">04 — Why Me</span>
             <span class="kicker-ref">The short version</span>
         </div>
         <h2 class="section-title fade-in">Why Work With Me</h2>
@@ -652,9 +699,9 @@
             <div class="why-body">
         <div class="why-intro slide-up">
             <p>
-                I build practical business applications — point-of-sale systems, digital ledger platforms,
-                inventory tools, and web applications — that help real businesses organize information and
-                streamline daily operations.
+                I build practical business applications that help real businesses organize information and
+                streamline daily operations — designed around the people who use them, from owners to
+                frontline staff.
             </p>
             <p>
                 Hands-on with frontend development in React and database-driven application development,
@@ -679,9 +726,9 @@
                     <span class="stat-note">retail · logistics · food service</span>
                 </div>
                 <div class="report-cell hot">
-                    <span class="stat-number">1</span>
-                    <span class="stat-label">Live Client App</span>
-                    <span class="stat-note"><i class="ops-dot" aria-hidden="true"></i>deployed 2026-09-30</span>
+                    <span class="stat-number">2</span>
+                    <span class="stat-label">Live Client Apps</span>
+                    <span class="stat-note"><i class="ops-dot" aria-hidden="true"></i>Tindahan apps · deployed</span>
                 </div>
                 <div class="report-cell">
                     <span class="stat-number">3</span>
@@ -690,7 +737,7 @@
                 </div>
             </div>
             <div class="report-foot">
-                <span><i class="ops-dot" aria-hidden="true"></i>Counts shipped work only</span>
+                <span><i class="ops-dot" aria-hidden="true"></i>Counts shipped work only · 2 trackers in daily use</span>
                 <span>All demos public</span>
             </div>
         </div>
@@ -731,7 +778,7 @@
     <section class="testimonials-teaser section-enhanced">
         <div class="container">
             <div class="section-kicker fade-in">
-                <span class="kicker-idx">04 — Testimonials</span>
+                <span class="kicker-idx">05 — Testimonials</span>
                 <span class="kicker-ref">From people I've worked with</span>
             </div>
             <h2 class="section-title fade-in">Kind Words</h2>
@@ -779,7 +826,7 @@
 
     <section id="process" class="container py-5 section-enhanced">
         <div class="section-kicker fade-in">
-            <span class="kicker-idx">05 — Process</span>
+                <span class="kicker-idx">06 — Process</span>
             <span class="kicker-ref">Same steps every time</span>
         </div>
         <h2 class="section-title fade-in">How an App Gets Built</h2>
@@ -817,7 +864,7 @@
     <section id="contact" class="section-enhanced">
         <div class="container">
             <div class="section-kicker fade-in">
-                <span class="kicker-idx">06 — Contact</span>
+                <span class="kicker-idx">07 — Contact</span>
                 <span class="kicker-ref">I reply within a day</span>
             </div>
             <h2 class="signoff-giant" aria-label="Let's build yours."><span aria-hidden="true"><span class="wd">Let's</span> <span class="wd">build</span> <span class="wd">yours<span class="period">.</span></span></span></h2>
@@ -940,7 +987,7 @@
                 </div>
                 <div class="chatbot-info">
                     <h4>Jong's AI Assistant</h4>
-                    <p class="status">● Online • Usually replies instantly</p>
+                    <p class="status"><span class="status-dot">●</span> Online • Usually replies instantly</p>
                 </div>
                 <button class="chatbot-minimize" id="chatbotMinimize" aria-label="Minimize chat"><i class="ti ti-minus"></i></button>
             </div>
@@ -974,7 +1021,7 @@
             <!-- Chat Input -->
             <div class="chatbot-input">
                 <input type="text" id="chatbotInput" placeholder="Type your question..." autocomplete="off">
-                <button id="chatbotSend" aria-label="Send message">➤</button>
+                <button id="chatbotSend" aria-label="Send message"><i class="ti ti-send"></i></button>
             </div>
         </div>
     </div>
@@ -1039,7 +1086,7 @@
             bottom: 20px;
             left: 20px;
             z-index: 9999;
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-family: 'Space Grotesk', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
         }
 
         .chatbot-toggle {
@@ -1091,8 +1138,8 @@
             max-height: calc(100vh - 120px);
             background: var(--secondary-bg);
             border-radius: 16px;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
-            border: 1px solid var(--accent);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3), 0 0 24px rgba(100, 255, 218, 0.07);
+            border: 1px solid var(--hairline-strong);
             flex-direction: column;
             overflow: hidden;
         }
@@ -1114,24 +1161,26 @@
         }
 
         .chatbot-header {
-            background: linear-gradient(135deg, var(--accent) 0%, var(--accent-secondary) 100%);
+            background: var(--primary-bg);
+            border-bottom: 1px solid var(--hairline-strong);
             padding: 16px;
             display: flex;
             align-items: center;
             gap: 12px;
-            color: var(--primary-bg);
+            color: var(--text-primary);
         }
 
         .chatbot-avatar .avatar-icon {
             width: 40px;
             height: 40px;
             border-radius: 50%;
-            border: 2px solid var(--primary-bg);
+            border: 1px solid var(--hairline-strong);
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 24px;
-            background: rgba(255, 255, 255, 0.2);
+            background: rgba(100, 255, 218, 0.08);
+            color: var(--accent);
         }
 
         .chatbot-info h4 {
@@ -1143,13 +1192,17 @@
         .chatbot-info .status {
             margin: 2px 0 0 0;
             font-size: 12px;
-            opacity: 0.9;
+            color: var(--text-secondary);
+        }
+
+        .chatbot-info .status .status-dot {
+            color: var(--accent);
         }
 
         .chatbot-minimize {
-            background: rgba(255, 255, 255, 0.2);
-            border: none;
-            color: var(--primary-bg);
+            background: transparent;
+            border: 1px solid var(--hairline);
+            color: var(--text-secondary);
             width: 28px;
             height: 28px;
             border-radius: 50%;
@@ -1167,7 +1220,9 @@
         }
 
         .chatbot-minimize:hover {
-            background: rgba(255, 255, 255, 0.3);
+            background: rgba(100, 255, 218, 0.08);
+            border-color: var(--hairline-strong);
+            color: var(--accent);
         }
 
         .chatbot-messages {
@@ -1188,7 +1243,7 @@
         }
 
         .chatbot-messages::-webkit-scrollbar-thumb {
-            background: var(--accent);
+            background: rgba(100, 255, 218, 0.35);
             border-radius: 3px;
         }
 
@@ -1213,6 +1268,7 @@
 
         .message-content {
             background: var(--primary-bg);
+            border: 1px solid var(--hairline);
             padding: 12px 16px;
             border-radius: 12px;
             border-bottom-left-radius: 2px;
@@ -1222,10 +1278,12 @@
         }
 
         .user-message .message-content {
-            background: linear-gradient(135deg, var(--accent) 0%, var(--accent-secondary) 100%);
+            background: var(--accent);
             color: var(--primary-bg);
+            border-color: transparent;
             border-radius: 12px;
             border-bottom-right-radius: 2px;
+            font-weight: 500;
         }
 
         .message-time {
@@ -1244,8 +1302,8 @@
 
         .quick-question-btn {
             background: var(--primary-bg);
-            border: 1px solid var(--accent);
-            color: var(--text-primary);
+            border: 1px solid var(--hairline-strong);
+            color: var(--text-secondary);
             padding: 10px 16px;
             border-radius: 8px;
             cursor: pointer;
@@ -1255,9 +1313,14 @@
             font-family: inherit;
         }
 
+        .quick-question-btn i {
+            color: var(--accent);
+        }
+
         .quick-question-btn:hover {
-            background: var(--accent);
-            color: var(--primary-bg);
+            background: rgba(100, 255, 218, 0.08);
+            border-color: rgba(100, 255, 218, 0.45);
+            color: var(--accent);
             transform: translateX(4px);
         }
 
@@ -1266,13 +1329,13 @@
             gap: 8px;
             padding: 16px;
             background: var(--primary-bg);
-            border-top: 1px solid var(--accent);
+            border-top: 1px solid var(--hairline);
         }
 
         .chatbot-input input {
             flex: 1;
             background: var(--secondary-bg);
-            border: 1px solid var(--text-secondary);
+            border: 1px solid var(--hairline-strong);
             color: var(--text-primary);
             padding: 12px 16px;
             border-radius: 24px;
@@ -1291,7 +1354,7 @@
         }
 
         .chatbot-input button {
-            background: linear-gradient(135deg, var(--accent) 0%, var(--accent-secondary) 100%);
+            background: var(--accent);
             border: none;
             color: var(--primary-bg);
             width: 44px;
@@ -1302,11 +1365,17 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            transition: transform 0.2s;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .chatbot-input button i {
+            width: 20px;
+            height: 20px;
         }
 
         .chatbot-input button:hover {
             transform: scale(1.1);
+            box-shadow: 0 4px 12px rgba(20, 184, 166, 0.3); /* same glow as the site's .btn-light hover */
         }
 
         /* Mobile Responsive */
@@ -1368,6 +1437,18 @@
 
         [data-theme="light"] .chatbot-toggle {
             box-shadow: 0 4px 20px rgba(20, 184, 166, 0.4);
+        }
+
+        [data-theme="light"] .chatbot-avatar .avatar-icon {
+            background: rgba(20, 184, 166, 0.12);
+        }
+
+        [data-theme="light"] .quick-question-btn:hover {
+            background: rgba(20, 184, 166, 0.12);
+        }
+
+        [data-theme="light"] .chatbot-minimize:hover {
+            background: rgba(20, 184, 166, 0.12);
         }
     </style>
 
@@ -1459,8 +1540,7 @@
                 .fromTo('.hero-tagline',{y:24,opacity:0},{y:0,opacity:1,duration:0.6},0.95)
                 .fromTo('.hero-description',{y:24,opacity:0},{y:0,opacity:1,duration:0.6},1.08)
                 .fromTo('.quick-info-bar',{y:24,opacity:0},{y:0,opacity:1,duration:0.6},1.2)
-                .fromTo('.hero-socials .hero-social',{y:18,opacity:0},{y:0,opacity:1,duration:0.5,stagger:0.08},1.32)
-                .fromTo('.hero-buttons-quiet .hero-text-link',{y:14,opacity:0},{y:0,opacity:1,duration:0.5,stagger:0.08},1.48);
+                .fromTo('.hero-buttons-quiet .hero-social, .hero-buttons-quiet .hero-text-link',{y:14,opacity:0},{y:0,opacity:1,duration:0.5,stagger:0.08},1.32);
 
             // Intro curtain: monogram + accent line, then a wipe-up reveal
             const curtain=document.getElementById('introCurtain');
@@ -1871,7 +1951,7 @@
                     <strong>Frontend:</strong> React, Next.js, TypeScript, HTML5, CSS3, JavaScript, Bootstrap<br>
                     <strong>Backend:</strong> Node.js, Express, MongoDB, Python, Django, Flask, SQLite<br>
                     <strong>Tools:</strong> Git, REST APIs<br><br>
-                    I build <strong>business applications</strong> — POS systems, digital ledgers, inventory tools, and web applications — with hands-on frontend experience in React and database-driven development!`
+                    I build <strong>business applications</strong> that improve daily operations and streamline workflows — with hands-on frontend experience in React and database-driven development!`
             },
 
             available: {
@@ -1933,7 +2013,7 @@
                 keywords: ['about', 'who', 'tell me', 'yourself', 'intro', 'introduction'],
                 response: `<i class="ti ti-hand-wave"></i> <strong>Nice to meet you!</strong><br><br>
                     I'm <strong>Jong Abawag</strong>, a Business Applications Developer who builds practical digital solutions that help businesses run their daily operations better.<br><br>
-                    I've worked on point-of-sale systems, digital ledger platforms, inventory tools, and web applications — approaching every project from a business perspective. New to tech but not new to delivering results – I'm eager to contribute, collaborate, and grow with forward-thinking teams!`
+                    I've built applications for retail, logistics, and food-service businesses — approaching every project from an operations perspective. New to tech but not new to delivering results – I'm eager to contribute, collaborate, and grow with forward-thinking teams!`
             },
 
             default: {
@@ -2060,6 +2140,16 @@
                     addMessage(response);
                 }, 800);
             });
+        });
+
+        // Case toggle — expand the clamped Problem/Solution/Impact on project cards
+        document.addEventListener('click', function(e) {
+            const btn = e.target.closest('.case-toggle');
+            if (!btn) return;
+            const card = btn.closest('.project-card');
+            const open = card.classList.toggle('case-open');
+            btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+            btn.querySelector('.case-toggle-label').textContent = open ? 'Close case' : 'Read the case';
         });
     </script>
 </body>
