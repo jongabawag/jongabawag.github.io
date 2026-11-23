@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Jong Abawag — Résumé</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  /* ── Palette: site light-mode tokens from portfolio.css ─────────────
+     paper #ffffff · ink #1f2937 · muted #4b5563 · hairline rgba(17,24,39,.14)
+     navy #1e3a8a (single accent)                                       */
+  @page { size: 210mm 297mm; margin: 0; }
+
+  html, body {
+    margin: 0; padding: 0;
+    width: 210mm;
+    min-height: 297mm;
+    background: #ffffff;
+  }
+  body {
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    color: #1f2937;
+    -webkit-print-color-adjust: exact; print-color-adjust: exact;
+  }
+
+  .page {
+    width: 210mm; height: 296.5mm;
+    box-sizing: border-box;
+    padding: 8mm 14mm 7mm;
+    position: relative;
+    display: flex; flex-direction: column;
+    background: #ffffff;
+  }
+
+  /* ── Header ── */
+  .r-head { display: flex; justify-content: space-between; align-items: flex-start; }
+  .r-name {
+    font-family: 'Space Grotesk', 'Inter', 'Segoe UI', sans-serif;
+    font-weight: 700; font-size: 23pt; letter-spacing: -0.5pt; line-height: 1.05;
+    margin: 0; color: #1f2937;
+  }
+  .r-byline {
+    font-family: 'Space Mono', 'Courier New', monospace;
+    font-size: 9.5pt; color: #1e3a8a; margin-top: 2.4mm;
+  }
+  .r-contact {
+    text-align: right; font-size: 8.5pt; color: #4b5563; line-height: 1.75; white-space: nowrap;
+  }
+  .r-contact strong { color: #1f2937; font-weight: 600; }
+
+  /* ── Section kickers (site section-kicker pattern) ── */
+  .r-kicker {
+    display: flex; justify-content: space-between; align-items: baseline;
+    font-family: 'Space Mono', 'Courier New', monospace;
+    font-size: 8pt; letter-spacing: 0.5pt; text-transform: uppercase;
+    color: #1e3a8a;
+    margin: 1.4mm 0 0.8mm; padding-bottom: 0.7mm;
+    border-bottom: 0.4pt solid rgba(17,24,39,0.14);
+  }
+  .r-kicker .ref { color: #6b7280; text-transform: none; letter-spacing: 0; }
+
+  .r-summary { font-size: 9.5pt; line-height: 1.5; color: #4b5563; margin: 0; }
+  .r-summary strong { color: #1f2937; font-weight: 600; }
+
+  /* ── Case files (projects) ── */
+  .r-case { display: flex; gap: 5mm; margin-bottom: 1.6mm; }
+  .r-case-code {
+    font-family: 'Space Mono', 'Courier New', monospace;
+    font-size: 7pt; line-height: 1.5; color: #1e3a8a;
+    white-space: nowrap; flex: 0 0 30mm; padding-top: 0.8mm;
+  }
+  .r-case-code .mono-mute { color: #6b7280; }
+  .r-case-body { flex: 1; }
+  .r-case-title {
+    font-family: 'Space Grotesk', 'Inter', sans-serif;
+    font-size: 10pt; font-weight: 600; color: #1f2937; margin: 0;
+  }
+  .r-case-desc { font-size: 8.8pt; line-height: 1.4; color: #4b5563; margin: 0.7mm 0 0; }
+  .r-case-desc strong { color: #1f2937; font-weight: 600; }
+  .r-case-tags {
+    font-family: 'Space Mono', 'Courier New', monospace;
+    font-size: 7pt; color: #1e3a8a; margin-top: 1.2mm;
+  }
+  .r-case-tags .sep { color: #6b7280; }
+
+  /* ── Skills (grouped rows, aligned to the case-file grid) ── */
+  .r-skillrow { display: flex; gap: 5mm; margin-bottom: 1.2mm; }
+  .r-skillrow:last-child { margin-bottom: 0; }
+  .r-skillrow-label {
+    font-family: 'Space Mono', 'Courier New', monospace;
+    font-size: 7pt; letter-spacing: 0.5pt; text-transform: uppercase;
+    color: #6b7280; white-space: nowrap; flex: 0 0 30mm; padding-top: 0.9mm;
+  }
+  .r-skillrow-items {
+    font-family: 'Space Mono', 'Courier New', monospace;
+    font-size: 8pt; line-height: 1.5; color: #1f2937;
+  }
+  .r-skillrow-items .sep { color: #9ca3af; }
+
+  /* ── Cert ledger (site cert-ledger pattern) ── */
+  .r-cert { display: flex; align-items: baseline; gap: 4mm; padding: 1.2mm 0; border-bottom: 0.4pt solid rgba(17,24,39,0.14); }
+  .r-cert:last-child { border-bottom: none; }
+  .r-cert-idx {
+    font-family: 'Space Mono', 'Courier New', monospace;
+    font-size: 7pt; color: #1e3a8a; white-space: nowrap; width: 16mm;
+  }
+  .r-cert-claim { font-size: 9.5pt; font-weight: 600; color: #1f2937; }
+  .r-cert-note { font-size: 8.5pt; color: #4b5563; margin-left: auto; text-align: right; }
+  .r-cert-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 6mm; margin-top: 0; }
+  .r-cert-cell { display: flex; align-items: baseline; gap: 3mm; padding: 1.2mm 0; border-bottom: 0.4pt solid rgba(17,24,39,0.14); }
+  .r-cert-name { font-size: 9.5pt; font-weight: 600; color: #1f2937; white-space: nowrap; }
+  .r-cert-cell .r-cert-note { font-size: 8pt; }
+
+  /* ── Experience ledger ── */
+  .r-exp { display: flex; gap: 5mm; margin-bottom: 0.5mm; align-items: baseline; }
+  .r-exp-body { flex: 1; min-width: 0; }
+  .r-edu { margin-top: 1.2mm; padding-top: 1mm; border-top: 0.4pt solid rgba(17,24,39,0.14); }
+  .r-edu-label {
+    font-family: 'Space Mono', 'Courier New', monospace;
+    font-size: 7pt; letter-spacing: 0.5pt; text-transform: uppercase; color: #6b7280;
+    margin-bottom: 1.4mm;
+  }
+  .r-exp:last-child { margin-bottom: 0; }
+  .r-exp-dates {
+    font-family: 'Space Mono', 'Courier New', monospace;
+    font-size: 7.5pt; color: #6b7280; white-space: nowrap; flex: 0 0 30mm;
+  }
+  .r-exp-role { font-size: 9.5pt; font-weight: 600; color: #1f2937; margin: 0; }
+  .r-exp-co { font-weight: 400; color: #4b5563; }
+  .r-exp-desc { font-size: 8.8pt; line-height: 1.4; color: #4b5563; margin: 0.4mm 0 0; }
+
+  /* ── Footer ── */
+  .r-foot {
+    margin-top: auto;
+    display: flex; justify-content: space-between;
+    font-family: 'Space Mono', 'Courier New', monospace;
+    font-size: 7.5pt; color: #6b7280;
+    border-top: 0.4pt solid rgba(17,24,39,0.14); padding-top: 1mm;
+  }
+  .r-foot .url { color: #1e3a8a; }
+
+  /* Browser preview auto-scale (screen only; ignored by print/PDF) */
+  @media screen {
+    html { background: #ffffff; }
+    body { transform-origin: top center; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- Header -->
+  <div class="r-head">
+    <div>
+      <h1 class="r-name">Jong Abawag</h1>
+      <div class="r-byline">Business Applications Developer</div>
+    </div>
+    <div class="r-contact">
+      <strong>jong.codes@gmail.com</strong><br>
+      linkedin.com/in/mariefil-abawag<br>
+      github.com/jongabawag
+    </div>
+  </div>
+
+  <!-- Profile -->
+  <div class="r-kicker"><span>00 — Profile</span><span class="ref">daily operations at the core</span></div>
+  <p class="r-summary">
+    I develop <strong>practical digital applications</strong> that help businesses improve daily operations,
+    organize information, and streamline workflows — grounded in <strong>years of running operations
+    myself</strong>.
+  </p>
+
+  <!-- Selected work -->
+  <div class="r-kicker"><span>01 — Selected Work</span><span class="ref">all 4 client tools shipped</span></div>
+
+  <div class="r-case">
+    <div class="r-case-code">CASE 01<br><span class="mono-mute">RETAIL · POS</span></div>
+    <div class="r-case-body">
+      <p class="r-case-title">Tindahan POS — Sari-sari Store Register</p>
+      <p class="r-case-desc"><strong>Solution:</strong> touch-friendly point-of-sale register with PIN-protected staff access and a guided checkout flow. <strong>Impact:</strong> built for a local store owner, deployed as a live demo.</p>
+      <div class="r-case-tags">JavaScript <span class="sep">·</span> Mobile-first <span class="sep">·</span> PIN Auth</div>
+    </div>
+  </div>
+
+  <div class="r-case">
+    <div class="r-case-code">CASE 02<br><span class="mono-mute">RETAIL · LEDGER</span></div>
+    <div class="r-case-body">
+      <p class="r-case-title">Tindahan Ledger — Daily Store Checklist</p>
+      <p class="r-case-desc"><strong>Solution:</strong> mobile-first daily checklist with cash counting, customer credit tracking, and PIN-protected owner/staff access. <strong>Impact:</strong> second tool shipped for the same client — simple enough for non-technical daily use.</p>
+      <div class="r-case-tags">JavaScript <span class="sep">·</span> Mobile-first <span class="sep">·</span> PWA</div>
+    </div>
+  </div>
+
+  <div class="r-case">
+    <div class="r-case-code">CASE 03<br><span class="mono-mute">LOGISTICS · TRACKER</span></div>
+    <div class="r-case-body">
+      <p class="r-case-title">MariClaire Water Delivery — Tubigan Tracker</p>
+      <p class="r-case-desc"><strong>Solution:</strong> Flask + SQLite tracker with owner, dispatcher, and driver roles — delivery trips, customer balances, inventory, settlements, and daily reports. <strong>Impact:</strong> each driver sees only their trips; the owner sees every peso.</p>
+      <div class="r-case-tags">Python <span class="sep">·</span> Flask <span class="sep">·</span> SQLite</div>
+    </div>
+  </div>
+
+  <div class="r-case">
+    <div class="r-case-code">CASE 04<br><span class="mono-mute">MEATSHOP · LEDGER</span></div>
+    <div class="r-case-body">
+      <p class="r-case-title">Botsi's Meatshop — Butcher's Ledger</p>
+      <p class="r-case-desc"><strong>Solution:</strong> ledger that follows each animal from purchase (ihaw) to dressed cuts, with stock movements, cashier accounts, and per-sale profit reports. <strong>Impact:</strong> true cost per kilo and per-sale profit computed automatically.</p>
+      <div class="r-case-tags">JavaScript <span class="sep">·</span> Role-based <span class="sep">·</span> Reports</div>
+    </div>
+  </div>
+
+  <!-- Skills -->
+  <div class="r-kicker"><span>02 — Skills &amp; Tools</span><span class="ref">daily drivers</span></div>
+  <div class="r-skillrow">
+    <div class="r-skillrow-label">Languages</div>
+    <div class="r-skillrow-items">JavaScript <span class="sep">·</span> TypeScript <span class="sep">·</span> Python</div>
+  </div>
+  <div class="r-skillrow">
+    <div class="r-skillrow-label">Frontend</div>
+    <div class="r-skillrow-items">React <span class="sep">·</span> Next.js <span class="sep">·</span> HTML5 <span class="sep">·</span> CSS3 <span class="sep">·</span> Bootstrap</div>
+  </div>
+  <div class="r-skillrow">
+    <div class="r-skillrow-label">Backend</div>
+    <div class="r-skillrow-items">Node.js <span class="sep">·</span> Express <span class="sep">·</span> Flask <span class="sep">·</span> Django</div>
+  </div>
+  <div class="r-skillrow">
+    <div class="r-skillrow-label">Data &amp; Tools</div>
+    <div class="r-skillrow-items">MongoDB <span class="sep">·</span> SQLite <span class="sep">·</span> Git</div>
+  </div>
+
+  <!-- Training -->
+  <div class="r-kicker"><span>03 — Training &amp; Certifications</span><span class="ref">bootcamp &amp; short courses</span></div>
+  <div class="r-cert">
+    <span class="r-cert-idx">CERT-001</span>
+    <span class="r-cert-claim">Full-Stack Web Development (MERN)</span>
+    <span class="r-cert-note">Zuitt Coding Bootcamp</span>
+  </div>
+  <div class="r-cert-grid">
+    <div class="r-cert-cell">
+      <span class="r-cert-idx">CERT-002</span>
+      <span class="r-cert-name">MongoDB</span>
+      <span class="r-cert-note">Zuitt Coding Bootcamp</span>
+    </div>
+    <div class="r-cert-cell">
+      <span class="r-cert-idx">CERT-003</span>
+      <span class="r-cert-name">Python</span>
+      <span class="r-cert-note">Zuitt Coding Bootcamp</span>
+    </div>
+    <div class="r-cert-cell">
+      <span class="r-cert-idx">CERT-004</span>
+      <span class="r-cert-name">Django</span>
+      <span class="r-cert-note">Zuitt Coding Bootcamp</span>
+    </div>
+    <div class="r-cert-cell">
+      <span class="r-cert-idx">CERT-005</span>
+      <span class="r-cert-name">AWS Cloud</span>
+      <span class="r-cert-note">Zuitt Coding Bootcamp</span>
+    </div>
+  </div>
+
+  <!-- Experience -->
+  <div class="r-kicker"><span>04 — Experience</span><span class="ref">2010 — present</span></div>
+
+  <div class="r-exp">
+    <div class="r-exp-dates">2025 – Present</div>
+    <div class="r-exp-body">
+      <p class="r-exp-role">Business Applications Developer <span class="r-exp-co">· Freelance</span></p>
+      <p class="r-exp-desc">Designs and builds registers, ledgers, and trackers for small businesses — 4 shipped, 2 live.</p>
+    </div>
+  </div>
+
+  <div class="r-exp">
+    <div class="r-exp-dates">2025 – Present</div>
+    <div class="r-exp-body">
+      <p class="r-exp-role">Financial Wealth Planner <span class="r-exp-co">· Insurance</span></p>
+      <p class="r-exp-desc">Advises clients on financial planning — needs analysis, insurance solutions, policy servicing.</p>
+    </div>
+  </div>
+
+  <div class="r-exp">
+    <div class="r-exp-dates">2020 – 2025</div>
+    <div class="r-exp-body">
+      <p class="r-exp-role">Operations Manager <span class="r-exp-co">· Retail &amp; Service Enterprise</span></p>
+      <p class="r-exp-desc">Led a team of up to 15 across five business lines — purchasing and supplier terms, stock and wastage control, payroll and scheduling.</p>
+      <p class="r-exp-desc">Ran the numbers — daily cash reconciliation, sales and margin reports, customer-credit collection.</p>
+    </div>
+  </div>
+
+  <div class="r-exp">
+    <div class="r-exp-dates">2023 – 2024</div>
+    <div class="r-exp-body">
+      <p class="r-exp-role">ESL Instructor</p>
+      <p class="r-exp-desc">Taught English to Japanese students — conversation and grammar, tailored to each learner.</p>
+    </div>
+  </div>
+
+  <div class="r-exp">
+    <div class="r-exp-dates">2013 – 2019</div>
+    <div class="r-exp-body">
+      <p class="r-exp-role">Cruise Line — F&amp;B Department</p>
+      <p class="r-exp-desc">Dining and bar service for international guests — six years of strict, high-volume standards.</p>
+    </div>
+  </div>
+
+  <div class="r-exp">
+    <div class="r-exp-dates">2012 – 2013</div>
+    <div class="r-exp-body">
+      <p class="r-exp-role">Store Supervisor <span class="r-exp-co">· Pancake House</span></p>
+      <p class="r-exp-desc">Ran daily store operations — shift supervision, cash handling and the end-of-day close.</p>
+    </div>
+  </div>
+
+  <div class="r-exp">
+    <div class="r-exp-dates">2010 – 2011</div>
+    <div class="r-exp-body">
+      <p class="r-exp-role">Barista <span class="r-exp-co">· Starbucks</span></p>
+      <p class="r-exp-desc">Prepared drinks and served a high-volume counter — speed and consistency through peak rushes.</p>
+    </div>
+  </div>
+
+  <!-- Education -->
+  <div class="r-edu">
+    <div class="r-edu-label">Education</div>
+    <div class="r-exp">
+      <div class="r-exp-dates">2006 – 2010</div>
+      <div class="r-exp-body">
+        <p class="r-exp-role">BS Tourism &amp; HRM <span class="r-exp-co">· Leyte Normal University</span></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="r-foot">
+    <span>Portfolio with full case files &amp; live demos:</span>
+    <span class="url">jongabawag.github.io</span>
+  </div>
+
+</div>
+</body>
+</html>
